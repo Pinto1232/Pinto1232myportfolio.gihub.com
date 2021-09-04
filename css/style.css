@@ -526,4 +526,33 @@ p {
     -moz-border-radius: 7px;
     -ms-border-radius: 7px;
     -o-border-radius: 7px;
+    text-transform: capitalize;
+}
+
+
+/*Stack section*/
+.stack-section{
+  background-color: var(--dark);
+}
+
+.stack-section .section-title{
+    margin-bottom: 40px;
+}
+
+.stack-tabs{
+    padding: 0 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.stack-tab-item {
+  font-size: 18px;
+  font-family: inherit;
+  text-transform: capitalize;
+  border: none;
+  background-color: transparent;
+  font-weight: 500;
+  color: var(--white);
+  cursor: pointer;
+  margin: 0 10px 10px;
 }
