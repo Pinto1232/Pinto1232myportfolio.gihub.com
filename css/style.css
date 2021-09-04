@@ -1,15 +1,118 @@
+/*
+  Global variables
+*/
+
+:root {
+    --main-color: #eaa023;
+    --dark: #0c1023;
+    --dark-light: #394168;
+    --white: #ffffff;
+    --white-light: #c8c8c8;
+    --shadow: 0 0 15px rgba(0,0,0,0.25);
+      scroll-behavior: smooth;
+  }
+ 
  /*
   Global Settings
 */
 
 * {
-    margin: 0; padding: 0;
+    margin: 0; 
+    padding: 0;
     box-sizing: border-box;
     outline: none;
 }
 
-.header .logo{}
+::before,
+::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-tap-highlight-color: transparent;
+}
+
+img {
+    vertical-align: middle;
+    max-width: 10%;
+}
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+.alight-items-center {
+   align-items: center;
+}
+
+/*
+   Header
+*/
+
+.header {
+    background-color: var(--dark-light);
+    padding: 12px 0;
+}
+.header .logo{
+    min-height: 34px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
 .header .nav-toggler{
     height: 34px;
     width: 44px;
+    margin-right: 15px;
+    cursor: pointer;
+    border: none;
+    background-color:transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.header .nav-toggler span {
+    height: 2px;
+    width: 30px;
+    display: block;
+    background-color: var(--white);
+    position: relative;
+}
+.header .nav-toggler span::before,
+.header .nav-toggler span::after {
+   content: '';
+   position: absolute;
+   left: 0;
+   top: 0;
+   height: 100%;
+   width: 100%;
+   background-color: var(--white);
+}
+
+.header .nav-toggler span::before{
+    transform: translateY(-8px);
+    -webkit-transform: translateY(-8px);
+    -moz-transform: translateY(-8px);
+    -ms-transform: translateY(-8px);
+    -o-transform: translateY(-8px);
+}
+
+.header .nav-toggler span::after{
+    transform: translateY(8px);
+    -webkit-transform: translateY(8px);
+    -moz-transform: translateY(8px);
+    -ms-transform: translateY(8px);
+    -o-transform: translateY(8px);
+}
+
+
