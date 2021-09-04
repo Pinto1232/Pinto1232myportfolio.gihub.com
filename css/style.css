@@ -96,6 +96,12 @@ ul{
     justify-content: center;
 }
 
+.header .nav-toggler.active{
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+
 .header .nav-toggler span {
     height: 2px;
     width: 30px;
