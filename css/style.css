@@ -92,6 +92,59 @@ h5{
 .min-vh-100{
     min-height: 100vh;
 }
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: transparent;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    text-transform: capitalize;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: inherit;
+    color: var(--white);
+    line-height: 1.5;
+    user-select: none;
+    border: none;
+}
+
+.btn-default{
+    border: 2px solid red;
+}
+
+.btn-default:hover{
+    color: var(--white);
+    background-color: red;
+}
+
+/*Animation keyframes for top banner image*/
+@keyframes zoomInOut {
+    0%, 100%{
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+   }
+
+}
+
 
 /*
    Header
@@ -264,6 +317,7 @@ h5{
 
 .home-section {
    position: relative;
+   overflow: hidden;
 }
 .home-section::before{
     content: '';
@@ -273,7 +327,7 @@ h5{
     height: 100%;
     width: 100%;
     background-color:var(--dark);
-    opacity: 0.8;
+    opacity: 0.4;
     z-index: -1;
 }
 
@@ -291,6 +345,8 @@ h5{
    background-position: center;
    max-width: 100%;
    z-index: -2;
+   animation: zoomInOut 20s ease infinite;
+   -webkit-animation: zoomInOut 20s ease infinite;
 }
 
 
@@ -306,5 +362,13 @@ h5{
     text-align: center;
 }
 
+.home-text h1{
+    font-family: var(--cursive-font);
+    font-size: 60px;
+    line-height: 75px;
+    margin: 0 0 5px;
+}
+
+.home-text p{}
 
 
