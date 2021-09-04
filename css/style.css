@@ -543,6 +543,7 @@ p {
     padding: 0 15px;
     width: 100%;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .stack-tab-item {
@@ -555,4 +556,13 @@ p {
   color: var(--white);
   cursor: pointer;
   margin: 0 10px 10px;
+  transition: color 0.3 ease;
+  -webkit-transition: color 0.3 ease;
+  -moz-transition: color 0.3 ease;
+  -ms-transition: color 0.3 ease;
+  -o-transition: color 0.3 ease;
+}
+
+.stack-tab-item.active{
+
 }
