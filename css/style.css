@@ -75,7 +75,9 @@ h5 {
     font-weight: 500;
     color: var(--white);
 }
-
+p {
+    font-size: 16px;
+}
 .container {
     max-width: 1170px;
     margin: auto;
@@ -440,4 +442,44 @@ h5 {
     font-size: 30px;
     text-transform: capitalize;
     margin: 0 0 15px;
+}
+
+
+.about-text p{
+    margin: 0 0 15px;
+    color: var(--white);
+}
+
+.about-text .btn{
+    margin: 15px 0 0;
+}
+
+.about-img img{
+    width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.about-img .img-box{
+    position: relative;
+}
+
+.about-img .img-box h3{
+    position: absolute;
+    background-color: var(--dark);
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    font-size: 30px;
+    font-family: var(--cursive-font);
 }
