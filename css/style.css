@@ -568,11 +568,11 @@ p {
 }
 
 .team-item:hover img{
-    transform:  skew(1deg);
-    -webkit-transform:  skew(1deg);
-    -moz-transform:  skew(1deg);
-    -ms-transform:  skew(1deg);
-    -o-transform:  skew(1deg);
+    transform:  rotate(360deg);
+    -webkit-transform:  rotate(360deg);
+    -moz-transform:  rotate(360deg);
+    -ms-transform:  rotate(360deg);
+    -o-transform:  rotate(360deg);
 }
 
 .team-item-info{
