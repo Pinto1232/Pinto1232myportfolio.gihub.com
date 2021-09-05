@@ -598,4 +598,9 @@ p {
 }
 
 
-.stack-tab-item.active {}
+.menu-tabs{
+     background-color: red;
+     padding: 0 15px;
+     width: 100%;
+     text-align: center;
+}
