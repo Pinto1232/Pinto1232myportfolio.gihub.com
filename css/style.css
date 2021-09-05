@@ -516,7 +516,7 @@ p {
     background-color: var(--dark-light);
     position: absolute;
     left: 50%;
-    top: 85%;
+    top: 79%;
     width: 100%;
     max-width: 250px;
     text-align: center;
@@ -540,22 +540,21 @@ p {
 
 
 /*Stack section*/
-.stack-section {
+.menu-section {
     background-color: var(--dark);
 }
 
-.stack-section .section-title {
+.menu-section .section-title{
     margin-bottom: 40px;
 }
 
-.stack-tabs {
+
+.menu-tabs{
     padding: 0 15px;
     width: 100%;
     text-align: center;
-    margin-bottom: 30px;
 }
-
-.stack-tab-item {
+.menu-tab-item{
     font-size: 18px;
     font-family: inherit;
     text-transform: capitalize;
@@ -565,15 +564,14 @@ p {
     color: var(--white);
     cursor: pointer;
     margin: 0 10px 10px;
-    transition: color 0.3 ease;
-    -webkit-transition: color 0.3 ease;
-    -moz-transition: color 0.3 ease;
-    -ms-transition: color 0.3 ease;
-    -o-transition: color 0.3 ease;
 }
 
 
 
+
+
+
+/*Loader*/
 .loader-container {
     position: fixed;
     top: 0;
@@ -588,6 +586,7 @@ p {
     overflow: hidden;
 }
 
+
 .loader-container img {
     width: 100%;
 }
@@ -595,12 +594,4 @@ p {
 .loader-container.fade-out {
     top: -110%;
     opacity: 0;
-}
-
-
-.menu-tabs{
-     background-color: red;
-     padding: 0 15px;
-     width: 100%;
-     text-align: center;
 }
