@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pinto1232/Pinto1232myportfolio.gihub.com.git"
+  },
+  "author": "Pinto Manuel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pinto1232/Pinto1232myportfolio.gihub.com/issues"
+  },
+  "homepage": "https://github.com/Pinto1232/Pinto1232myportfolio.gihub.com#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0"
+  }
+}

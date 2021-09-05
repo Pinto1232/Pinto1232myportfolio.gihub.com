@@ -574,6 +574,10 @@ p {
     -ms-transform:  rotate(360deg);
     -o-transform:  rotate(360deg);
     transition: transform 0.5s ease;
+    -webkit-transition: transform 0.5s ease;
+    -moz-transition: transform 0.5s ease;
+    -ms-transition: transform 0.5s ease;
+    -o-transition: transform 0.5s ease;
 }
 
 .team-item-info{
