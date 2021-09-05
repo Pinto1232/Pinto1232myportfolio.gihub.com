@@ -128,6 +128,10 @@ p {
     text-transform: ca;
 }
 
+.icons{
+    text-decoration: none!important;
+}
+
 
 /*buttons*/
 .btn {
