@@ -5,13 +5,13 @@
 const navBarToggler = document.querySelector(".nav-toggler");
 navBarToggler.addEventListener("click", toggleMyNav);
 
-function toggleMyNav(){
+function toggleMyNav() {
     navBarToggler.classList.toggle("active")
     document.querySelector(".nav").classList.toggle("open")
 }
 
 /**Close nav when item is clicked */
-document.addEventListener("click", function(e){
+document.addEventListener("click", function (e) {
     if (e.target.closest(".nav-item")) {
         toggleMyNav();
     }
@@ -19,15 +19,31 @@ document.addEventListener("click", function(e){
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /**
  *  Loader
  */
- function loader(){
+function loader() {
     document.querySelector('.loader-container').classList.add('fade-out');
-  }
-  
-  function fadeOut(){
+}
+
+function fadeOut() {
     setInterval(loader, 9000);
-  }
-  
-  window.onload = fadeOut;
+}
+
+window.onload = fadeOut;

@@ -28,7 +28,7 @@
     font-family: 'Nunito';
 }
 
-html{
+html {
     font-size: 62.5%;
     overflow-x: hidden;
     scroll-padding-top: 5.5rem;
@@ -80,9 +80,11 @@ h5 {
     font-weight: 500;
     color: var(--white);
 }
+
 p {
     font-size: 16px;
 }
+
 .container {
     max-width: 1170px;
     margin: auto;
@@ -193,21 +195,22 @@ p {
 }
 
 @keyframes spin01 {
-    0%{
+    0% {
         transform: rotate(0deg);
         -webkit-transform: rotate(0deg);
         -moz-transform: rotate(0deg);
         -ms-transform: rotate(0deg);
         -o-transform: rotate(0deg);
     }
-    100%{
+
+    100% {
         transform: rotate(360deg);
         -webkit-transform: rotate(360deg);
         -moz-transform: rotate(360deg);
         -ms-transform: rotate(360deg);
         -o-transform: rotate(360deg);
-}
-    
+    }
+
 }
 
 
@@ -454,7 +457,7 @@ p {
 
 
 /*About section*/
-.about-section{
+.about-section {
     background-color: var(--dark-light);
 }
 
@@ -463,28 +466,28 @@ p {
 }
 
 .about-text,
-.about-img{
+.about-img {
     width: 50%;
     padding: 0 15px;
 }
 
-.about-text h3{
+.about-text h3 {
     font-size: 30px;
     text-transform: capitalize;
     margin: 0 0 15px;
 }
 
 
-.about-text p{
+.about-text p {
     margin: 0 0 15px;
     color: var(--white);
 }
 
-.about-text .btn{
+.about-text .btn {
     margin: 15px 0 0;
 }
 
-.about-img img{
+.about-img img {
     width: 100%;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -493,11 +496,11 @@ p {
     -o-border-radius: 10px;
 }
 
-.about-img .img-box{
+.about-img .img-box {
     position: relative;
 }
 
-.about-img .img-box::before{
+.about-img .img-box::before {
     content: '';
     position: absolute;
     height: 100px;
@@ -509,7 +512,7 @@ p {
     -webkit-animation: spin01 10s linear infinite;
 }
 
-.about-img .img-box h3{
+.about-img .img-box h3 {
     background-color: var(--dark-light);
     position: absolute;
     left: 50%;
@@ -537,15 +540,15 @@ p {
 
 
 /*Stack section*/
-.stack-section{
-  background-color: var(--dark);
+.stack-section {
+    background-color: var(--dark);
 }
 
-.stack-section .section-title{
+.stack-section .section-title {
     margin-bottom: 40px;
 }
 
-.stack-tabs{
+.stack-tabs {
     padding: 0 15px;
     width: 100%;
     text-align: center;
@@ -553,47 +556,46 @@ p {
 }
 
 .stack-tab-item {
-  font-size: 18px;
-  font-family: inherit;
-  text-transform: capitalize;
-  border: none;
-  background-color: transparent;
-  font-weight: 500;
-  color: var(--white);
-  cursor: pointer;
-  margin: 0 10px 10px;
-  transition: color 0.3 ease;
-  -webkit-transition: color 0.3 ease;
-  -moz-transition: color 0.3 ease;
-  -ms-transition: color 0.3 ease;
-  -o-transition: color 0.3 ease;
+    font-size: 18px;
+    font-family: inherit;
+    text-transform: capitalize;
+    border: none;
+    background-color: transparent;
+    font-weight: 500;
+    color: var(--white);
+    cursor: pointer;
+    margin: 0 10px 10px;
+    transition: color 0.3 ease;
+    -webkit-transition: color 0.3 ease;
+    -moz-transition: color 0.3 ease;
+    -ms-transition: color 0.3 ease;
+    -o-transition: color 0.3 ease;
 }
 
 
 
-.loader-container{
+.loader-container {
     position: fixed;
-    top:0; left:0;
-    height:100%; 
-    width:100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
     z-index: 10000;
-    background:#fff;
+    background: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
 }
 
-.loader-container img{
-    width:100%;
+.loader-container img {
+    width: 100%;
 }
 
-.loader-container.fade-out{
-    top:-110%;
-    opacity:0;
+.loader-container.fade-out {
+    top: -110%;
+    opacity: 0;
 }
 
 
-.stack-tab-item.active{
-
-}
+.stack-tab-item.active {}
