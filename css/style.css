@@ -580,7 +580,7 @@ p {
 }
 
 .loader-container img{
-    width:35rem;
+    width:100%;
 }
 
 .loader-container.fade-out{
