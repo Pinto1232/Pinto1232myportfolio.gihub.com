@@ -135,6 +135,10 @@ p {
     text-transform: ca;
 }
 
+.topSubhead {
+    font-size: 24px!important;
+}
+
 
 
 /*buttons*/
@@ -619,8 +623,21 @@ p {
 }
 
 
+/**
+ * Portfolio Gallery
+ */
+
+ .mh-portfolio {
+     background-color: var(--white);
+     color: var(--dark);
+ }
+
+ 
 
 
+
+
+ 
 
 /*Loader*/
 .loader-container {
