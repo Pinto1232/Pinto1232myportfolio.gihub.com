@@ -555,6 +555,7 @@ p {
 }
 
 
+
 /*team section*/
 .team-section {
     background-color: var(--dark);
@@ -658,6 +659,23 @@ p {
      margin: 40px auto;
  }
 
+ .theLink{
+    z-index: 10000;
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    margin-top: 207px;
+    margin-left: 38px;
+    padding: 4px;
+    background: #990ae3;
+    border: none;
+    font-weight: 600;
+ }
+
+ .theLink:hover{
+     background-color: #394168;
+ }
+
  .portfolio-header{
      color: var(--dark);
      font-size: 53px;
@@ -698,7 +716,9 @@ p {
     height: 250px;
     margin: 5px;
     display: block;
+    box-shadow: var(--shadow);
 }
+
 
 @media (min-width: 200px) and (max-width: 404px) {
     .product .itemBox{
