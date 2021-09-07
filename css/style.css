@@ -481,6 +481,15 @@ p {
     margin: 0 0 15px;
 }
 
+.little-into {
+    font-size: 19px;
+    text-decoration: none;
+}
+.looking-good {
+    font-size: 20px;
+    text-decoration: none;
+}
+
 
 .about-text p {
     margin: 0 0 15px;
