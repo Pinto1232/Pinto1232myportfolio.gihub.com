@@ -649,6 +649,11 @@ p {
      margin: 40px auto;
  }
 
+ .portfolio-header{
+     color: var(--dark);
+     font-size: 53px;
+ }
+
  .portfolio .ul-p {
      display: flex;
      justify-content: center;
