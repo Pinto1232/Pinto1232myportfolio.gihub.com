@@ -482,12 +482,12 @@ p {
 }
 
 .little-into {
-    font-size: 19px;
-    text-decoration: none;
+    font-size: 19px!important;
+    text-decoration: none!important;
 }
 .looking-good {
-    font-size: 20px;
-    text-decoration: none;
+    font-size: 20px!important;
+    text-decoration: none!important;
 }
 
 
