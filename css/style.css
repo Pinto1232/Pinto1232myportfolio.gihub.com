@@ -490,7 +490,7 @@ p {
     text-decoration: none!important;
 }
 .typo {
-    text-decoration: underline;
+    text-decoration: underline!important;
 }
 
 
