@@ -658,7 +658,8 @@ p {
      flex-direction: column;
      margin: 40px auto;
  }
- /**Image change */
+
+ 
  .theLink{
     z-index: 10000;
     color: #fff;
