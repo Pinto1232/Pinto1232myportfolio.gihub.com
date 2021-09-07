@@ -627,17 +627,71 @@ p {
  * Portfolio Gallery
  */
 
- .mh-portfolio {
-     background-color: var(--white);
-     color: var(--dark);
+ .portfolio{
+     padding: 20px;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     margin: 40px auto;
  }
 
- 
+ .portfolio .ul-p {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     margin-bottom: 20px;
+ }
+
+.portfolio .ul-p li{
+    list-style: none;
+    background-color: var(--white);
+    padding: 12px 20px;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.portfolio .ul-p li.active{
+    background: var(--dark);
+    color: var(--white);
+}
+
+.product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product .itemBox{
+    position: relative;
+    width: 400px;
+    height: 250px;
+    margin: 5px;
+    display: block;
+}
 
 
+/**
+ * Last codes to be added after adding js code
+ */
+.product .itemBox.hide{
+   display: none;
+}
+
+.product .itemBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
 
 
- 
 
 /*Loader*/
 .loader-container {
@@ -656,7 +710,7 @@ p {
 
 
 .loader-container img {
-    width: 100%;
+    max-width: 16%;
 }
 
 .loader-container.fade-out {
