@@ -664,7 +664,7 @@ p {
  */
 
  .theLink{
-    z-index: 10000;
+    z-index: 10;
     color: #fff;
     font-size: 20px;
     position: absolute;
