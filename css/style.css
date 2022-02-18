@@ -25,10 +25,10 @@
     padding: 0;
     box-sizing: border-box;
     outline: none;
-    font-family: 'Nunito';
+    font-family: 'Nunito, sans-serif';
 }
 
-html {
+body {
     font-size: 62.5%;
     overflow-x: hidden;
     scroll-padding-top: 5.5rem;
@@ -769,6 +769,35 @@ p {
 .loader-container.fade-out {
     top: -110%;
     opacity: 0;
+}
+
+
+/* My Stack */
+.stack{
+    background: #0c1023;
+}
+
+.container-stack {
+    display: flex;
+     margin: 220px 220px;
+     padding: 20px 40px;
+    align-items: center;
+}
+
+ .stack .container-stack {
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+   flex-wrap: wrap;
+
+}
+
+ .stack-item{
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    flex-shrink: 400px;
+    flex-grow: 500px;
 }
 
 
