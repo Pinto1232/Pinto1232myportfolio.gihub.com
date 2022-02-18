@@ -466,6 +466,14 @@ p {
     background-color: var(--dark-light);
 }
 
+.about-section .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   margin: 250px 205px;
+   margin-top: -4em;
+}
+
 .about-img-icon {
     max-width: 100%;
 }
@@ -784,6 +792,7 @@ p {
     text-align: center;
     color: 3fff;
     font-size: 53px;
+    text-transform: capitalize;
 }
 
 .container-stack {
