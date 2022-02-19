@@ -1,6 +1,5 @@
 /*Fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:wght@300&display=swap');
 /*
   Global variables
 */
@@ -25,16 +24,15 @@
     padding: 0;
     box-sizing: border-box;
     outline: none;
-    font-family: 'Nunito, sans-serif';
 }
 
-body {
+/* body {
     font-size: 62.5%;
     overflow-x: hidden;
     scroll-padding-top: 5.5rem;
     scroll-behavior: smooth;
 }
-
+ */
 ::before,
 ::after {
     box-sizing: border-box;
@@ -44,9 +42,10 @@ body {
     font-size: 16px;
     line-height: 1.5;
     -webkit-tap-highlight-color: transparent;
-    font-family: 'Nunito';
     font-weight: 300;
     color: var(--white-light);
+    font-family: 'Nunito', sans-serif;
+font-family: 'Poppins', sans-serif
 
 }
 
@@ -93,16 +92,13 @@ p {
 
 .row {
     display: flex;
-    flex-wrap: wrap;
-}
-
-.justify-content-between {
     justify-content: space-between;
+    align-items: center;
+    margin: 0px 300px;
+    
 }
 
-.alight-items-center {
-    align-items: center;
-}
+
 
 .min-vh-100 {
     min-height: 100vh;
@@ -112,18 +108,22 @@ p {
     padding: 80px 0;
 }
 
+.section-header-title{
+    text-align: center;
+    font-size: 25px;
+    color: #eaa023;
+}
+
 /*Section title*/
 .section-title {
     width: 100%;
     padding: 0 15px;
     text-align: center;
     margin-bottom: 60px;
-}
-
-.section-title h2 {
     font-size: 53px;
     text-transform: capitalize;
 }
+
 
 
 .section-title h2::before {
@@ -139,6 +139,13 @@ p {
 .topSubhead {
     font-size: 24px !important;
 }
+
+/* .header .constainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+} */
 
 
 
@@ -472,6 +479,47 @@ p {
     align-items: center;
    margin: 250px 205px;
    margin-top: -4em;
+   margin: 0px 50px;
+   padding:  50px 150px;
+}
+
+.about-section .text-description{
+    font-size: 22px;
+    color: #fff;
+    line-height: 1.5;
+}
+
+.about-section .text-greeting{
+    font-size: 22px;
+    color: #fff;
+}
+
+.about-section .greetings{
+    font-size: 22px;
+    color: #fff;
+    padding-bottom: 2em;
+}
+
+
+.about-section .btn-default{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.img-about h3{
+    font-size: 25px;
+    align-items: center;
+    text-align: center;
+    text-decoration: underline;
+    justify-content: center;
+}
+
+.img-about .about-me-img{
+    max-width: 500px;
+}
+
+.about-description .top-greeting{
+    font-size: 53px;
 }
 
 .about-img-icon {
@@ -669,7 +717,7 @@ p {
 
 .theLink {
     z-index: 10;
-    color: #fff;
+   color: #fff;
     font-size: 20px;
     position: absolute;
     margin-top: 207px;
@@ -684,7 +732,7 @@ p {
     -ms-border-radius: 2px;
     -o-border-radius: 2px;
     padding-left: 2rem;
-    padding-right: 2rem;
+    padding-right: 2rem; 
 }
 
 .theLink:hover {
@@ -786,6 +834,7 @@ p {
 /* My Stack  */
 .stack {
     background: #0c1023;
+   padding-top: 5em;
 }
 
 .stack h1 {
@@ -856,6 +905,21 @@ p {
 
 
 @media(max-width: 768px){
+    .row{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .portfolio-header{
+        text-align: center;
+        line-height: 1.2;
+        font-size: 250%;
+    }
+    .home-text h1{
+       font-size: 200%;
+    }
     .stack .container-stack{
         flex-direction: column;
         padding-top: 20px;
@@ -873,16 +937,76 @@ p {
         flex-grow: 500px;
     }
 
-    .sec-padding .container{
+    .about-section .container{
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
     }
 
+    .constainer .about-description h3{
+           font-size: 53px;
+    }
+
     .header .container{
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .itemBox img{
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 100%;
+        margin: 0;
+        flex-basis: 20%;
+    }
+
+    .theLink{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    .about-section .constainer{
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .about-description .top-greeting {
+        font-size: 250%;
+        line-height: 1.5;
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    .about-section .text-description {
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    .about-section .text-greeting{
+        text-align: center;
+    }
+    .about-section .greetings{
+        text-align: center;
+    }
+
+    .about-section .btn-default{
+        text-align: center;
+        align-items: center;
+        margin-bottom: 2em;
+        max-width: 100%;
+    }
+
+    .img-about .about-me-img {
+        max-width: 100%;
+        justify-content: center;
         align-items: center;
     }
 }
