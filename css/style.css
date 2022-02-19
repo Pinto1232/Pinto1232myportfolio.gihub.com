@@ -620,8 +620,9 @@ p {
     background-color: var(--dark);
 }
 
-.img-team {
+.stack-item .img-team {
     max-width: 100%;
+    flex-grow: 2;
 }
 
 .team-item {
