@@ -629,13 +629,9 @@ p {
     padding: 0 15px;
 }
 
-.team-item img {
+.stack-item img {
     max-width: 100%;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
+    border-radius: 2px 2px 0px 0px;
     transition: transform 0.5s ease;
     -webkit-transition: transform 0.5s ease;
     -moz-transition: transform 0.5s ease;
@@ -645,7 +641,7 @@ p {
 
 
 
-.team-item:hover img {
+.stack-item:hover img {
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
@@ -658,10 +654,10 @@ p {
     -o-transition: transform 0.5s ease;
 }
 
-.team-item-info {
+.item-description {
     background-color: var(--dark-light);
-    border-radius: 8px;
-    padding: 15px;
+    /* border-radius: 8px; */
+   /*  padding: 15px; */
     text-align: center;
     position: relative;
     left: 0px;
@@ -672,18 +668,18 @@ p {
     pointer-events: none;
 }
 
-.team-item:hover .team-item-info {
+.stack:hover .item-description {
     transform: translateY(-15px);
     background-color: var(--main-color);
 }
 
-.team-item-info h3 {
+.item-description h3 {
     font-size: 18px;
     text-transform: capitalize;
     margin: 0 0 10px;
 }
 
-.team-item-info p {
+.item-description p {
     text-transform: capitalize;
     transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
@@ -692,7 +688,7 @@ p {
     -o-transition: all 0.5s ease;
 }
 
-.team-item:hover .team-item-info {
+.stack-item:hover .item-description {
     color: var(--white);
 }
 
@@ -877,26 +873,20 @@ p {
     justify-content: space-between;
     align-items: center;
     align-items: center;
-    margin-top: -7.5px;
+    margin-top: -35px;
     line-height: 1.5;
 }
 
 
 .item-description h3 {
-    flex: 1 1 0px;
+    flex: 1px;
     flex-grow: 1;
     flex-shrink: 1;
-    flex-basis: 0;
-    color: black;
-    border: 1px solid #fff;
-    background-color: white;
     font-weight: bold;
-
 }
 
 
 .item-description p {
-    border: 1px solid #fff;
     background-color: white;
     color: black;
     margin-bottom: 1em;
