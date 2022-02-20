@@ -448,10 +448,12 @@ p {
 .home-text {
     padding: 0 15px;
     max-width: 700px;
-    width: 100%;
+    width: 100%; 
+    padding-top: 10em;
     margin: auto;
     text-align: center;
 }
+
 
 .home-text h1 {
     font-family: var(--cursive-font);
@@ -896,6 +898,26 @@ p {
 
 
 @media(max-width: 768px){
+    .logo img{
+        display: none;
+    }
+    
+    .logo-text{
+        display: flex;
+        width: 100%;
+        max-width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .home-text {
+        padding: 0 15px;
+        max-width: 700px;
+        margin-top: 10em;
+       /*  width: 100%; */
+       /*  margin: auto; */
+        text-align: center;
+    }
     .row{
         display: flex;
         align-items: center;
