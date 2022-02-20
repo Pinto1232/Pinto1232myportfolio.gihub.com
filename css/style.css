@@ -909,11 +909,16 @@ p {
         justify-content: space-between;
         align-items: center;
     }
+    .home-text h1{
+        line-height: 1.5;
+        margin-top: 1em;
+    }
 
     .home-text {
         padding: 0 10px;
         max-width: 700px;
         text-align: center;
+        line-height: 1.5;
     }
     .row{
         display: flex;
