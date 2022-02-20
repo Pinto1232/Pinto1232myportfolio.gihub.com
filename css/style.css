@@ -472,9 +472,55 @@ p {
 
 
 /*About section*/
-.about-section {
-    background-color: var(--dark-light);
+
+.flex-container{
+    margin-top: -4em;
 }
+
+
+.my-descrition .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark-light);
+    padding: 5em 10em;
+}
+
+.item-description-text h3{
+    font-size: 53px;
+    text-decoration: none;
+}
+
+.item-description-text p{
+    font-size: 18px;
+    max-width: 80%;
+    line-height: 1.9;
+}
+
+.item-description-text a{
+    margin: 30px 0px;
+}
+
+.image-side-description img{
+    max-width: 30em;
+}
+
+.image-side-description h4{
+    text-align: center;
+    align-items: flex-end;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+
+.image-side-description h3{
+    text-align: center;
+    align-items: flex-end;
+}
+
+
+
+
 
 .about-section .container{
     display: flex;
@@ -484,12 +530,6 @@ p {
    margin-top: -4em;
    margin: 0px 50px;
    padding:  50px 150px;
-}
-
-.about-section .text-description{
-    font-size: 18px;
-    color: #fff;
-    line-height: 1.5;
 }
 
 .about-section .text-greeting{
@@ -898,6 +938,20 @@ p {
 }
 
 
+
+
+@media only screen and (max-width: 1859px) and (min-width: 760px)  {
+    .stack .container-stack{
+        padding-top: 20px;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .my-descrition .containerP{
+        flex-wrap: wrap;
+    }
+}
+
 @media(max-width: 768px){
     .logo img{
         display: none;
@@ -927,6 +981,37 @@ p {
         justify-content: space-between;
         flex-direction: column;
     }
+    .my-descrition .container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .item-description-text h3{
+        line-height: 1;
+        font-size: 185%;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+
+    .item-description-text p{
+        text-align: center;
+        justify-content:space-between;
+        align-items: center;
+    }
+
+    .item-description-text btn-default{
+        display: inline-block;
+    }
+
+    .image-side-description img{
+        max-width: 100%;
+    }
+
+    .image-side-description h4{
+       max-width: 100%;
+       text-align: center;
+    }
 
     .portfolio-header{
         text-align: center;
@@ -935,11 +1020,6 @@ p {
     }
     .home-text h1{
        font-size: 200%;
-    }
-    .stack .container-stack{
-        flex-direction: column;
-        padding-top: 20px;
-        text-align: center;
     }
 
     .stack h1{
@@ -1000,13 +1080,7 @@ p {
         text-align: center;
         text-transform: capitalize;
     }
-    .about-section .text-description{
-        font-size: 18px;
-        color: #fff;
-        line-height: 1.5;
-        text-align: center;
-        line-height: 1.5;
-    }
+
 
     .about-section .text-greeting{
         text-align: center;
