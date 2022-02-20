@@ -487,30 +487,30 @@ p {
 }
 
 .about-section .text-description{
-    font-size: 22px;
+    font-size: 18px;
     color: #fff;
     line-height: 1.5;
 }
 
 .about-section .text-greeting{
-    font-size: 22px;
+    font-size:18px;
     color: #fff;
 }
 
 .about-section .greetings{
-    font-size: 22px;
+    font-size: 18px;
     color: #fff;
     padding-bottom: 2em;
 }
 
 
 .about-section .btn-default{
-    font-size: 22px;
+    font-size: 16px;
     font-weight: bold;
 }
 
 .img-about h3{
-    font-size: 25px;
+    font-size: 18px;
     align-items: center;
     text-align: center;
     text-decoration: underline;
@@ -996,12 +996,14 @@ p {
 
     .about-description .top-greeting {
         font-size: 250%;
-        line-height: 1.5;
+        line-height: 1.2;
         text-align: center;
         text-transform: capitalize;
     }
-
-    .about-section .text-description {
+    .about-section .text-description{
+        font-size: 18px;
+        color: #fff;
+        line-height: 1.5;
         text-align: center;
         line-height: 1.5;
     }
@@ -1013,16 +1015,13 @@ p {
         text-align: center;
     }
 
-    .about-section .btn-default{
-        text-align: center;
-        align-items: center;
-        margin-bottom: 2em;
-        max-width: 100%;
-    }
-
     .img-about .about-me-img {
         max-width: 100%;
         justify-content: center;
         align-items: center;
+    }
+
+    .about-section .btn-default{
+        text-align: center;
     }
 }
