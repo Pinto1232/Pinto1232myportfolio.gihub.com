@@ -658,6 +658,199 @@ p {
 
 
 
+/* Portfolio */
+
+.container-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+.card{
+    background-color: #394168;
+    min-width: 370px;
+    min-height: 400px;
+    margin: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  border-radius: 4px;
+}
+
+.card:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.card:hover{
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.692);
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 0.5s ease;
+}
+
+.card-img{
+    min-height: 200px;
+    max-width: 100%;
+    margin-bottom: 15px;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.card h2{
+    padding: 10px;
+    font-weight: bold;
+}
+
+.card p{
+    padding: 10px;
+    max-width: 20vw;
+}
+
+.card a{
+    margin: 10px 10px;
+    padding: 8px 4px;
+    background: #fff;
+    color: #000;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.card a:hover{
+    background-color: #0c1023;
+    color: #fff;
+}
+
+.card-1{
+    background-image: url('../img/carcrew.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+.card-2{
+    background-image: url('../img/cdesign_s.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.card-3{
+    background-image: url('../img/cliqs.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-4{
+    background-image: url('../img/computer-manias.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-5{
+    background-image: url('../img/elearning.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.card-6{
+    background-image: url('../img/face-ydc.PNG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.card-7{
+    background-image: url('../img/flexbox.PNG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-8{
+    background-image: url('../img/lose_control.PNG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-9{
+    background-image: url('../img/pisval.PNG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-10{
+    background-image: url('../img/scooter.PNG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-11{
+    background-image: url('../img/videoone.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-12{
+    background-image: url('../img/videostwo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-13{
+    background-image: url('../img/work-hard.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-14{
+    background-image: url('../img/ydc-2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-15{
+    background-image: url('../img/ydc-logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-16{
+    background-image: url('../img/youtube.PNG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* End of portfolio */
+
+
+
+
+
+
+
+
+
+
 /*team section*/
 .team-section {
     background-color: var(--dark);
@@ -985,6 +1178,19 @@ p {
     }
 
     .about-section .btn-default{
+        text-align: center;
+    }
+
+
+    .card h2{
+        padding: 10px;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .card p{
+        padding: 10px;
+        max-width: 100%;
         text-align: center;
     }
 
