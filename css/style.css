@@ -849,6 +849,27 @@ p {
     background-size: cover;
 }
 
+.card-18 {
+    background-image: url('../img/netflix-clone.PNG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-19 {
+    background-image: url('../img/web-app.PNG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-20 {
+    background-image: url('../img/e-commerce.PNG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /* End of portfolio */
 
 
