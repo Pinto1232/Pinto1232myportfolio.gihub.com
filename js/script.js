@@ -45,12 +45,47 @@ document.addEventListener("click", function (e) {
             }
          }
      })
- }
+}
  
+/* Modal  */
+// select the open-btn button
+let openBtn = document.getElementById('open-btn');
+let openBtns = document.getElementById('open-btns');
+// select the modal-background
+let modalBackground = document.getElementById('modal-background');
+let modalBackgroundC = document.getElementById('modal-background-c');
+// select the close-btn 
+let closeBtn = document.getElementById('close-btn');
+
+// shows the modal when the user clicks open-btn
+openBtn.addEventListener('click', function (event)
+{
+ event.preventDefault()
+  modalBackground.style.display = 'block';
+});
 
 
+openBtns.addEventListener('click', function (event)
+{
+ event.preventDefault()
+  modalBackgroundC.style.display = 'block';
+});
 
+// hides the modal when the user clicks close-btn
+closeBtn.addEventListener('click', function (event)
+{
+    event.preventDefault()
+  modalBackground.style.display = 'none';
+});
 
+// hides the modal when the user clicks outside the modal
+window.addEventListener('click', function(event) {
+  // check if the event happened on the modal-background
+  if (event.target === modalBackground) {
+    // hides the modal
+    modalBackground.style.display = 'none';
+  }
+});
 
 
 

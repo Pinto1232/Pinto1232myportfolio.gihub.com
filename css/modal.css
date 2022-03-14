@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+
+
+.modal { 
+    width: 100%;
+    height: 100%;
+    /* display: grid; */
+    position: fixed;
+    place-items: center;
+    background-color: #1f1f1f;
+      font-weight: 300;
+      font-family: inherit;
+      line-height: 1.5;
+       box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30),
+       0 15px 12px rgba(0, 0, 0, 0.22);
+       border-radius: 5px;
+       display: none;
+}
+
+.card-modal{
+    background-color: #fff;
+    width: 50rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem;
+    margin: 10px; 
+    position: relative;
+}
+
+.card-modal #close{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 1.6rem;
+    color: #0c1023;
+}
+
+.modal .card-modal .brand img{
+    display: block;
+    width:100%;
+}
+
+.card-modal input[type="email"]{
+    background-color: rgba(255, 255, 255, 0.63);
+    width: 100%;
+    padding:1rem;
+    outline: none
+}
+
+.card-modal input[type="submit"]{
+    background: #fff;
+    color: #000;
+    display: inline-block;
+    min-width:  100%;
+    padding: 1rem;
+    border: none;
+    margin-top: 0.3em;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-modal input[type="submit"]:hover {
+   background-color: red;
+   color: #fff;
+   border: none;
+}
+
+.card-modal h2{
+    margin-bottom: 1rem;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 900;
+}
+
+
+.card-modal p{
+    color: #fff;
+     margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+   .modal  .card-modal{
+       flex-direction:  column;
+       width: 80vw;
+       text-align: center;
+   }
+
+   .card-modal .brand { 
+       width: 100%;
+       height: 15rem;
+       overflow: hidden;
+       margin-top: 4rem;
+   }
+   .card-modal form{
+       display: block;
+   }
+
+   .card-modal form input[type="email"],
+   .card-modal input[type="email"]::placeholder {
+       text-align: center;
+   }
+}
+
+
+
+
+button:hover {
+    cursor: pointer;
+}
+
+/* common styles end */
+
+/* modal part */
+#modal-background {
+    display: none;
+    background-color: #1a1919d3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#modal-background-c {
+    display: none;
+    background-color: #1a1919d3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#modal {
+    background-color: #394168;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    font-size: 1.5rem;
+    animation-name: animatemodal;
+    animation-duration: 0.4s;
+}
+
+
+#modal-c {
+    background-color: #394168;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    font-size: 1.5rem;
+    animation-name: animatemodal;
+    animation-duration: 0.4s;
+}
+
+.yes,
+.no {
+    border: none;
+    padding: 7px 14px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.yes {
+    background-color: #00ff00;
+}
+
+.no {
+    background-color: #ff0000;
+}
+
+#close-btn {
+    align-self: flex-end;
+}
+
+#close-btn:hover {
+    cursor: pointer;
+    color: #ff0000;
+}
+
+/* modal part end */
+
+/* animation part */
+@keyframes animatemodal {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+
+    to {
+        top: 50%;
+        opacity: 1;
+    }
+}
+
+/* animation part end */

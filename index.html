@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/@icon/unicons/unicons.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
     <title>Pinto Portfolio</title>
 </head>
 
@@ -24,7 +26,7 @@
                 </button>
                 <nav class="nav">
                     <ul>
-                        <li class="nav-item"><a href="#home"> Home</a></li>
+                        <li class="nav-item"><a href="#home">Home</a></li>
                         <li class="nav-item"><a href="#about"> About</a></li>
                         <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
                         <li class="nav-item"><a href="#stack"> My Stack</a></li>
@@ -85,178 +87,224 @@
     </section>
     <!--End of about me section-->
 
+
     <section class="portfolio-header">
         <h3>My Portfolio</h3>
     </section>
 
+
+    <!-- Start of all modal -->
+    <div class="modal"  id="modal-background">
+        <div class="card-modal"  id="modal">
+            <i class=" uil uil-multiply" id="close-btn"></i>
+            <div class="brand">
+                <img src="img/carcrew.png" alt="">
+            </div>
+            <div class="info">
+                <h2>Car Crew</h2>
+                <p>Car crew is a website for a car dealers where you get best brands at the best prices</p>
+
+                <form action="#">
+                    <input type="email" placeholder="rate my work from 1 to 5">
+                    <input type="submit" value="Subscribe" placeholder="Leave a rate">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- End of all madal -->
+
+
+      <!-- Start of all modal -->
+    <div class="modal"  id="modal-background-c">
+        <div class="card-modal"  id="modal-c">
+            <i class=" uil uil-multiply" id="close-btn"></i>
+            <div class="brand">
+                <img src="img/cdesign_s.png" alt="">
+            </div>
+            <div class="info">
+                <h2>Cdesign</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente impedit voluptatum atque.</p>
+
+                <form action="#">
+                    <input type="email" placeholder="rate my work from 1 to 5">
+                    <input type="submit" value="Subscribe" placeholder="Leave a rate">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- End of all madal -->
+
+
+
+
+
     <!-- Portfolio Gallery Start -->
     <section class="container-card" id="portfolio">
-     <div class="card">
-         <div class="card-img card-1"></div>
-         <h2>Car Crew</h2>
-         <p>Is a website that showcase different cars from different brands and tasty.</p>
-         <a href="https://pinto1232.github.io/Pinto1232.carcrew.github.io./">Website</a>
-     </div>
-
-     <div class="card">
-        <div class="card-img card-2"></div>
-        <h2>cDesign</h2>
-        <p>Is an online store that sell various design product for many artists.</p>
-        <a href="#">E-commerce</a>
-    </div>
-
-    <div class="card">
-        <div class="card-img card-3"></div>
-        <h2>ClickShop</h2>
-        <p>Is an online e-commerce platform design and conceptualized for a client by me.</p>
-        <a href="#">ClickShop</a>
-    </div>
-
-    <div class="card">
-        <div class="card-img card-4"></div>
-        <h2>Computer Mania</h2>
-        <p>I participate in the building of this project while working at Netmechanic.</p>
-        <a href="https://www.computermania.co.za/">E-commerce</a>
-    </div>
-
-    <div class="card">
-        <div class="card-img card-5"></div>
-        <h2>E-learning</h2>
-        <p>This project was design for a client which saw the need of transfer the english classes online. </p>
-        <a href="#">Digital Marketing</a>
-    </div>
-
-    <div class="card">
-        <div class="card-img card-6">
+        <div class="card">
+            <div class="card-img card-1"></div>
+            <h2>Car Crew</h2>
+            <p>Is a website that showcase different cars from different brands and tasty.</p>
+            <a id="open-btn">Website</a>
         </div>
-        <h2>YDC</h2>
-        <p>Is a furniture store that his owner saw the necessity to mantain the business presence online.</p>
-        <a href="#">Digital Marketing</a>
-    </div>
-
-    <div class="card">
-        <div class="card-img card-7">
-        </div>
-        <h2>Proprity FlexLog</h2>
-        <p>A platform that was design for rent and sell proprieties</p>
-        <a href="#">E-commerce</a>
-    </div>
-
-    <div class="card">
-        <div class="card-img card-8">
-        </div>
-        <h2>Lose Control</h2>
-        <p>An online store which maintain his presence online thru social media platform</p>
-        <a href="#">Digital Marketing</a>
-    </div>
-
-    <div class="card">
-        <div class="card-img card-9">
-        </div>
-        <h2>Pisval Tech</h2>
-        <p>Is a website belong to a tech agency based abroad.</p>
-        <a href="#">Agency Website</a>
-    </div>
-
-    <div class="card">
-        <div class="card-img card-10">
-        </div>
-        <h2>Uscooters</h2>
-        <p>An online platoform developed by to a client based in USA.</p>
-        <a href="#">Onlie Store</a>
-    </div>
-
-    <div class="card">
-        <div class="card-img card-11">
-        </div>
-        <h2>School Management</h2>
-        <p>This is a video project that was created by me After effect and Primier pro.</p>
-        <a href="#">Video creation and Editing</a>
-    </div>
-
-    <div class="card">
-        <div class="card-img card-12">
-        </div>
-        <h2>Lose control</h2>
-        <p>Video created for a client, that pursue online store</p>
-        <a href="#">Lose control</a>
-    </div>
-
-    <div class="card">
-        <div class="card-img card-13">
-        </div>
-        <h2>Work Hard</h2>
-        <p>Is a company that sell safety material for onshore and Offshore company abroad.</p>
-        <a href="#">Offshore company</a>
-    </div>
-
-    <div class="card">
-        <div class="card-img card-14">
-        </div>
-        <h2>YDC lar do sonho</h2>
-        <p>Is an e-commerce platform that sell furniture.</p>
-        <a href="#">E-commerce website</a>
-    </div>
-
-    <div class="card">
-        <div class="card-img card-15">
-        </div>
-        <h2>YDC Logo</h2>
-        <p>The logo concept was created by me.</p>
-        <a href="#">Marketing and Branding</a>
-    </div>
-
-    <div class="card">
-        <div class="card-img card-16">
-        </div>
-        <h2>Pintotnet App Soluction</h2>
-        <p>My channel on Youtube about tech.
-          Please leave a like and subscribe. Thanks.
-        </p>
-        <a href="https://www.youtube.com/channel/UC3dhTWYHAhk1DX6yhrovb7Q">My Youtube channel</a>
-    </div>
-
-
-    <div class="card">
-        <div class="card-img card-17">
-        </div>
-        <h2>Flex Box crash course</h2>
-        <p>
-            This is a brief tutorial about flexbox from my Youtube channel.
-        </p>
-        <a href="#">Youtube Channel</a>
-    </div>
 
         <div class="card">
-        <div class="card-img card-18">
+            <div class="card-img card-2"></div>
+            <h2>cDesign</h2>
+            <p>Is an online store that sell various design product for many artists.</p>
+            <a id="open-btns">E-commerce</a>
         </div>
-        <h2>Netflix clone</h2>
-        <p>
-            A clone of Netflix  website with authentication and API consumption.
-        </p>
-        <a href="#">Netflix</a>
-    </div>
 
         <div class="card">
-        <div class="card-img card-19">
+            <div class="card-img card-3"></div>
+            <h2>ClickShop</h2>
+            <p>Is an online e-commerce platform design and conceptualized for a client by me.</p>
+            <a href="#">ClickShop</a>
         </div>
-        <h2>Responsive Landing page</h2>
-        <p>
-            Landing page of a private project done.
-        </p>
-        <a href="#">Landing page</a>
-    </div>
 
         <div class="card">
-        <div class="card-img card-20">
+            <div class="card-img card-4"></div>
+            <h2>Computer Mania</h2>
+            <p>I participate in the building of this project while working at Netmechanic.</p>
+            <a href="https://www.computermania.co.za/">E-commerce</a>
         </div>
-        <h2>E-commerce website</h2>
-        <p>
-            This is a dynamic e-commerce website build from scrash that make use of API's.
-        </p>
-        <a href="#">Online store</a>
-    </div>
 
+        <div class="card">
+            <div class="card-img card-5"></div>
+            <h2>E-learning</h2>
+            <p>This project was design for a client which saw the need of transfer the english classes online. </p>
+            <a href="#">Digital Marketing</a>
+        </div>
+
+        <div class="card">
+            <div class="card-img card-6">
+            </div>
+            <h2>YDC</h2>
+            <p>Is a furniture store that his owner saw the necessity to mantain the business presence online.</p>
+            <a href="#">Digital Marketing</a>
+        </div>
+
+        <div class="card">
+            <div class="card-img card-7">
+            </div>
+            <h2>Proprity FlexLog</h2>
+            <p>A platform that was design for rent and sell proprieties</p>
+            <a href="#">E-commerce</a>
+        </div>
+
+        <div class="card">
+            <div class="card-img card-8">
+            </div>
+            <h2>Lose Control</h2>
+            <p>An online store which maintain his presence online thru social media platform</p>
+            <a href="#">Digital Marketing</a>
+        </div>
+
+        <div class="card">
+            <div class="card-img card-9">
+            </div>
+            <h2>Pisval Tech</h2>
+            <p>Is a website belong to a tech agency based abroad.</p>
+            <a href="#">Agency Website</a>
+        </div>
+
+        <div class="card">
+            <div class="card-img card-10">
+            </div>
+            <h2>Uscooters</h2>
+            <p>An online platoform developed by to a client based in USA.</p>
+            <a href="#">Onlie Store</a>
+        </div>
+
+        <div class="card">
+            <div class="card-img card-11">
+            </div>
+            <h2>School Management</h2>
+            <p>This is a video project that was created by me After effect and Primier pro.</p>
+            <a href="#">Video creation and Editing</a>
+        </div>
+
+        <div class="card">
+            <div class="card-img card-12">
+            </div>
+            <h2>Lose control</h2>
+            <p>Video created for a client, that pursue online store</p>
+            <a href="#">Lose control</a>
+        </div>
+
+        <div class="card">
+            <div class="card-img card-13">
+            </div>
+            <h2>Work Hard</h2>
+            <p>Is a company that sell safety material for onshore and Offshore company abroad.</p>
+            <a href="#">Offshore company</a>
+        </div>
+
+        <div class="card">
+            <div class="card-img card-14">
+            </div>
+            <h2>YDC lar do sonho</h2>
+            <p>Is an e-commerce platform that sell furniture.</p>
+            <a href="#">E-commerce website</a>
+        </div>
+
+        <div class="card">
+            <div class="card-img card-15">
+            </div>
+            <h2>YDC Logo</h2>
+            <p>The logo concept was created by me.</p>
+            <a href="#">Marketing and Branding</a>
+        </div>
+
+        <div class="card">
+            <div class="card-img card-16">
+            </div>
+            <h2>Pintotnet App Soluction</h2>
+            <p>My channel on Youtube about tech.
+                Please leave a like and subscribe. Thanks.
+            </p>
+            <a href="https://www.youtube.com/channel/UC3dhTWYHAhk1DX6yhrovb7Q">My Youtube channel</a>
+        </div>
+
+
+        <div class="card">
+            <div class="card-img card-17">
+            </div>
+            <h2>Flex Box crash course</h2>
+            <p>
+                This is a brief tutorial about flexbox from my Youtube channel.
+            </p>
+            <a href="#">Youtube Channel</a>
+        </div>
+
+        <div class="card">
+            <div class="card-img card-18">
+            </div>
+            <h2>Netflix clone</h2>
+            <p>
+                A clone of Netflix website with authentication and API consumption.
+            </p>
+            <a href="#">Netflix</a>
+        </div>
+
+        <div class="card">
+            <div class="card-img card-19">
+            </div>
+            <h2>Responsive Landing page</h2>
+            <p>
+                Landing page of a private project done.
+            </p>
+            <a href="#">Landing page</a>
+        </div>
+
+        <div class="card">
+            <div class="card-img card-20">
+            </div>
+            <h2>E-commerce website</h2>
+            <p>
+                This is a dynamic e-commerce website build from scrash that make use of API's.
+            </p>
+            <a href="#">Online store</a>
+        </div>
     </section>
     <!-- Portfolio Gallery Start -->
 
@@ -405,7 +453,8 @@
     </section>
     <!-- Section contact End-->
 
-    <script src="js/script.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
     </body>
 
 </html>

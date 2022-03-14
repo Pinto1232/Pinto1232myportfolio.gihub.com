@@ -172,7 +172,6 @@ p {
     font-family: inherit;
     color: var(--white);
     line-height: 1.5;
-    user-select: none;
     border: none;
 }
 
