@@ -120,7 +120,7 @@ button:hover {
 /* modal part */
 #modal-background {
     display: none;
-    background-color: #1a1919d3;
+    background-color: #1a19197c;
     position: fixed;
     top: 0;
     left: 0;
@@ -141,7 +141,7 @@ button:hover {
 }
 
 #modal {
-    background-color: #394168;
+    background-color: #394168ed;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -159,7 +159,7 @@ button:hover {
 
 
 #modal-c {
-    background-color: #394168;
+    background-color:#394168ed;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -175,27 +175,23 @@ button:hover {
     animation-duration: 0.4s;
 }
 
-.yes,
-.no {
-    border: none;
-    padding: 7px 14px;
-    font-size: 1rem;
-    border-radius: 5px;
-}
 
-.yes {
-    background-color: #00ff00;
-}
-
-.no {
-    background-color: #ff0000;
-}
 
 #close-btn {
     align-self: flex-end;
 }
 
 #close-btn:hover {
+    cursor: pointer;
+    color: #ff0000;
+}
+
+
+#close-btn-c {
+    align-self: flex-end;
+}
+
+#close-btn-c:hover {
     cursor: pointer;
     color: #ff0000;
 }
