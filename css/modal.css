@@ -140,6 +140,18 @@ button:hover {
     z-index: 1;
 }
 
+
+#modal-background-b {
+    display: none;
+    background-color: #1a1919d3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
 #modal {
     background-color: #394168ed;
     position: absolute;
@@ -155,7 +167,7 @@ button:hover {
     font-size: 1.5rem;
     animation-name: animatemodal;
     animation-duration: 0.4s;
-    
+
 }
 
 
@@ -177,6 +189,25 @@ button:hover {
 }
 
 
+#modal-b {
+    background-color: #394168ed;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    font-size: 1.5rem;
+    animation-name: animatemodal;
+    animation-duration: 0.4s;
+}
+
+
+
 
 #close-btn {
     align-self: flex-end;
@@ -193,6 +224,16 @@ button:hover {
 }
 
 #close-btn-c:hover {
+    cursor: pointer;
+    color: #ff0000;
+}
+
+
+#close-btn-b {
+    align-self: flex-end;
+}
+
+#close-btn-b:hover {
     cursor: pointer;
     color: #ff0000;
 }
