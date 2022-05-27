@@ -1089,6 +1089,17 @@ p {
 }
 
 @media(max-width: 768px){
+
+    .text-p1{
+        min-width: 282%;
+        margin-left: -126px;
+        margin-top: 32px; 
+    }
+    .text-p {
+        min-width: 282%;
+        margin-left: -126px;
+        margin-top: 32px;
+    }
     .logo img{
         display: none;
     }
