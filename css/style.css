@@ -991,6 +991,7 @@ div .btn-cover{
     border: 2px solid red;
     margin-bottom: 10px;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 .btn-cover:hover{background:red; cursor: pointer;}
