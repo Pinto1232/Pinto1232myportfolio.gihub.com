@@ -985,9 +985,10 @@ div .title{
 div .btn-cover{
     border: 2px solid red;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
-.btn-cover:hover{background:red}
+.btn-cover:hover{background:red; cursor: pointer;}
 
 
 
