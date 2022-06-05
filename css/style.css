@@ -847,6 +847,13 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.card-21 {
+    background-image: url('../img/span.PNG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 /* End of portfolio */
 
@@ -992,6 +999,11 @@ div .btn-cover{
     margin-bottom: 10px;
     cursor: pointer;
     margin-top: 10px;
+}
+.git-account h4{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: underline!important;
 }
 
 .btn-cover:hover{background:red; cursor: pointer;}
