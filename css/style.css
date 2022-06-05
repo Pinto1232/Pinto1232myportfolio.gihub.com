@@ -1132,6 +1132,10 @@ div .btn-cover{
         max-width: 100%;
     }
 
+    .btn-cover{
+        cursor:pointer;
+    }
+
     .card a{
         margin: 7px 39px;
     }
