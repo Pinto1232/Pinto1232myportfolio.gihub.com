@@ -978,6 +978,11 @@ div .title{
     font-size: 40px;
 }
 
+.helper-div{
+    background-color: #9b28e3;
+    padding: 20px;
+}
+
 .paragraph-descript{
     text-align: start;
 }
@@ -1124,6 +1129,10 @@ div .btn-cover{
         margin-top: 20px;
         margin-bottom: 10px;
     }
+
+    .helper-div{
+    background-color: transparent
+  }
     .paragraph-descript{
         text-align: center;
         margin-bottom: 10px;
