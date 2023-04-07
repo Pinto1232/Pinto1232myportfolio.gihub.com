@@ -1309,3 +1309,44 @@ div .btn-cover{
    
 
 }
+
+
+
+.container-stack {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -5px;
+  }
+
+  .stack-item {
+    flex: 1;
+    min-width: calc(33.333% - 10px);
+    max-width: calc(33.333% - 10px);
+    padding: 5px;
+    box-sizing: border-box;
+  }
+
+  .img-team {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+  }
+
+  /* Responsive layout for screens 768px and below */
+  @media (max-width: 768px) {
+    .stack-item {
+      min-width: calc(50% - 10px);
+      max-width: calc(50% - 10px);
+    }
+  }
+
+  /* Responsive layout for screens 480px and below */
+  @media (max-width: 480px) {
+    .stack-item {
+      min-width: 100%;
+      max-width: 100%;
+    }
+  }
+</style>
