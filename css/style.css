@@ -243,6 +243,7 @@ p {
     color: #fff;
     font-weight: 700;
     text-transform: uppercase;
+    white-space: nowrap;
 }
 
 
@@ -1187,6 +1188,7 @@ div .btn-cover{
         max-width: 100%;
         justify-content: space-between;
         align-items: center;
+        white-space: nowrap;
     }
     .home-text h1{
         line-height: 1.5;
