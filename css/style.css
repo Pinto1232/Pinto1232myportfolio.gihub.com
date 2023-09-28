@@ -1184,7 +1184,7 @@ div .btn-cover{
     
     .logo-text{
         display: flex;
-        width: 122px;
+        /* width: 122px; */
         max-width: 100%;
         justify-content: space-between;
         align-items: center;
