@@ -53,6 +53,9 @@ img {
     max-width: 100%;
 }
 
+.avatar-icon {
+    border-radius: 50%;
+ }
 .main-logo {
     vertical-align: middle;
     max-width: 13%;
