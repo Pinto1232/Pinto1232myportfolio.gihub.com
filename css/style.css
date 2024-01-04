@@ -55,7 +55,17 @@ img {
 
 .avatar-icon {
     border-radius: 50%;
+    cursor: pointer;
  }
+
+ .avatar-icon {
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.avatar-icon:hover {
+    transform: scale(1.1);
+}
 .main-logo {
     vertical-align: middle;
     max-width: 13%;
