@@ -763,6 +763,13 @@ p {
     background-size: cover;
 }
 
+.card-22{
+    background-image: url('../img/Mweb.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
 /* .card-9{
     background-image: url('../img/pisval.PNG');
     background-position: center;
