@@ -1384,3 +1384,17 @@ div .btn-cover{
   .title-main {
     animation: 2s ease-out 0s 1 slideInFromLeft;
   }
+
+
+  @keyframes slideInFromTop {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .my-stack {
+    animation: 2s ease-out 0s 1 slideInFromTop;
+  }
