@@ -357,7 +357,7 @@
         <h4 class="section-header-title">
             Stack
         </h4>
-        <h1>All my tech stack</h1>
+        <h1 class="my-stack">All my tech stack</h1>
         <div class="container-stack">
             <div class="stack-item">
                 <img class="img-team" src="img/js.png" alt="pinto">
@@ -585,7 +585,18 @@
     <section class="form">
         <div class="container">
             <div class="form">
-                <div class="contact-info"></div>
+                <div class="contact-info">
+                    <form class="thank-you-form" action="mailto:pintotnet@gmail.com" method="post" enctype="text/plain" onsubmit="alert('Your message has been sent!')">
+                        <h2>Leave a Message?</h2>
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
 
                 <div class="contact-form">
 
