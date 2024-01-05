@@ -586,7 +586,7 @@
         <div class="container">
             <div class="form">
                 <div class="contact-info">
-                    <form class="thank-you-form" action="mailto:pintotnet@gmail.com" method="post" enctype="text/plain" onsubmit="alert('Your message has been sent!')">
+                    <form class="thank-you-form" action="send_email.php" method="post" enctype="text/plain" onsubmit="event.preventDefault(); alert('Your message has been sent!'); this.submit();">
                         <h2>Leave a Message?</h2>
                         <label for="name">Your Name:</label>
                         <input type="text" id="name" name="name" required>
