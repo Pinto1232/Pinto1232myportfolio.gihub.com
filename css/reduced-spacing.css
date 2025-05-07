@@ -121,6 +121,24 @@ section {
   padding: 1.5rem !important;
 }
 
+@media (max-width: 768px) {
+  .book-page {
+    padding: 1.25rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .book-page {
+    padding: 1rem !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .book-page {
+    padding: 0.75rem !important;
+  }
+}
+
 /* Responsive adjustments */
 @media (max-width: 992px) {
   .section {

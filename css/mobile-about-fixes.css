@@ -1,0 +1,88 @@
+/* Mobile-specific fixes for About Me section */
+
+/* Ensure proper text wrapping in profile details */
+@media (max-width: 576px) {
+  .detail-item {
+    word-break: break-word;
+  }
+  
+  .detail-item span {
+    max-width: calc(100% - 40px);
+  }
+  
+  /* Improve social links display */
+  .social-links-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .git-account {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  
+  /* Improve download buttons */
+  .download-buttons {
+    width: 100%;
+  }
+  
+  .btn-cv, .btn-cover {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  /* Fix key skills section */
+  .key-skills {
+    width: 100%;
+    padding: 1rem;
+  }
+  
+  .skills-list {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  
+  /* Fix profile header */
+  .profile-header {
+    width: 100%;
+  }
+  
+  .profile-title {
+    width: 100%;
+  }
+  
+  /* Fix paragraph text */
+  .paragraph-body, .paragraph-descript {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 375px) {
+  /* Further reduce padding */
+  .profile-header, .profile-details, .profile-links {
+    padding: 0;
+  }
+  
+  /* Ensure text fits */
+  .title-header {
+    font-size: 1.2rem;
+  }
+  
+  .paragraph-body {
+    font-size: 0.8rem;
+  }
+  
+  /* Compact contact details */
+  .detail-item {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Ensure buttons are properly sized */
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+}

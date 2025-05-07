@@ -7,7 +7,8 @@
 }
 
 /* Fix for potential overflow issues */
-html, body {
+html,
+body {
   overflow-x: hidden;
   width: 100%;
   position: relative;
@@ -45,8 +46,8 @@ img {
 }
 
 /* Fix for grid layouts */
-.grid, 
-.container-card, 
+.grid,
+.container-card,
 .container-stack {
   display: grid;
   width: 100%;
@@ -61,14 +62,23 @@ img {
 }
 
 /* Fix for potential text overflow */
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
   word-wrap: break-word;
   hyphens: auto;
 }
 
 /* Fix for form elements */
-input, textarea, select, button {
+input,
+textarea,
+select,
+button {
   max-width: 100%;
 }
 
@@ -80,7 +90,10 @@ table {
 }
 
 /* Fix for iframes and embeds */
-iframe, embed, object, video {
+iframe,
+embed,
+object,
+video {
   max-width: 100%;
   height: auto;
 }
@@ -90,7 +103,7 @@ iframe, embed, object, video {
   .nav-item {
     width: 100%;
   }
-  
+
   .nav-item a {
     width: 100%;
     display: block;
@@ -99,12 +112,15 @@ iframe, embed, object, video {
 
 /* Fix for portfolio filter on small screens */
 @media (max-width: 576px) {
-  .filter-list, .category-tabs {
+
+  .filter-list,
+  .category-tabs {
     flex-wrap: wrap;
     justify-content: center;
   }
-  
-  .filter-item, .category-tab {
+
+  .filter-item,
+  .category-tab {
     margin-bottom: 0.5rem;
   }
 }
@@ -114,7 +130,7 @@ iframe, embed, object, video {
   .contact-container {
     grid-template-columns: 1fr;
   }
-  
+
   .contact-details {
     margin-bottom: 2rem;
   }
@@ -125,7 +141,7 @@ iframe, embed, object, video {
   .footer-content {
     grid-template-columns: 1fr;
   }
-  
+
   .footer-bottom {
     flex-direction: column;
     text-align: center;
@@ -138,7 +154,7 @@ iframe, embed, object, video {
     width: 95%;
     flex-direction: column;
   }
-  
+
   .card-modal .brand {
     height: 200px;
   }
@@ -150,14 +166,63 @@ iframe, embed, object, video {
     grid-template-columns: 1fr;
     text-align: center;
   }
-  
+
   .avatar-icon {
     margin: 0 auto 1.5rem;
   }
-  
+
   .git-account {
     display: inline-block;
     margin: 1rem auto;
+  }
+
+  /* Improve About Me section container */
+  .about-section .container {
+    padding: 0 1rem;
+  }
+
+  .book-container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  /* Fix social links on mobile */
+  .social-links-group {
+    width: 100%;
+  }
+
+  /* Ensure profile details are properly aligned */
+  .profile-details {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .detail-item {
+    width: 100%;
+  }
+}
+
+/* Additional fixes for very small screens */
+@media (max-width: 375px) {
+  .about-section .container {
+    padding: 0 0.5rem;
+  }
+
+  .section-title h2 {
+    font-size: 1.5rem;
+  }
+
+  .profile-links {
+    gap: 0.5rem;
+  }
+
+  .social-links-group {
+    gap: 0.5rem;
+  }
+
+  .download-buttons {
+    gap: 0.5rem;
   }
 }
 
@@ -166,7 +231,7 @@ iframe, embed, object, video {
   .stack-item {
     min-height: auto;
   }
-  
+
   .img-team {
     height: 150px;
   }
@@ -177,16 +242,16 @@ iframe, embed, object, video {
   .home-text h1 {
     font-size: 2rem;
   }
-  
+
   .home-text p {
     font-size: 1rem;
   }
-  
+
   .home-buttons {
     flex-direction: column;
     gap: 1rem;
   }
-  
+
   .home-buttons .btn {
     width: 100%;
   }
@@ -197,11 +262,11 @@ iframe, embed, object, video {
   .header .container {
     padding: 0 1rem;
   }
-  
+
   .logo-text {
     font-size: 1.2rem;
   }
-  
+
   .main-logo {
     width: 30px;
     height: 30px;
@@ -213,7 +278,7 @@ iframe, embed, object, video {
   .section {
     padding: 3rem 0;
   }
-  
+
   .section-title {
     margin-bottom: 2rem;
   }
@@ -224,11 +289,11 @@ iframe, embed, object, video {
   .card {
     margin-bottom: 1.5rem;
   }
-  
+
   .card h2 {
     font-size: 1.25rem;
   }
-  
+
   .card p {
     font-size: 0.9rem;
   }
@@ -239,11 +304,11 @@ iframe, embed, object, video {
   .stack-item {
     margin-bottom: 1.5rem;
   }
-  
+
   .item-description h3 {
     font-size: 0.9rem;
   }
-  
+
   .item-description p {
     font-size: 0.8rem;
   }
@@ -254,11 +319,11 @@ iframe, embed, object, video {
   .thank-you-form {
     padding: 1.5rem;
   }
-  
+
   .thank-you-form h3 {
     font-size: 1.5rem;
   }
-  
+
   .form-group {
     margin-bottom: 1rem;
   }
@@ -269,12 +334,12 @@ iframe, embed, object, video {
   .footer {
     padding: 3rem 0 1rem;
   }
-  
+
   .footer-content {
     gap: 2rem;
     margin-bottom: 2rem;
   }
-  
+
   .footer-logo p,
   .footer-links ul li a,
   .footer-newsletter p,
