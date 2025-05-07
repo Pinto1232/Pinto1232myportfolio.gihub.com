@@ -1,0 +1,141 @@
+/* Centered Contact Section Styles */
+
+/* Center the contact container */
+.centered-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+/* Enhance contact info section */
+.contact-info {
+  max-width: 600px;
+  width: 100%;
+  background-color: rgba(30, 30, 50, 0.05);
+  border-radius: 10px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-info:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Style contact items */
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-item:last-child {
+  border-bottom: none;
+}
+
+.contact-item i {
+  font-size: 1.8rem;
+  color: var(--primary);
+  margin-right: 1.5rem;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 210, 211, 0.1);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.contact-item:hover i {
+  background-color: var(--primary);
+  color: var(--white);
+  transform: scale(1.1);
+}
+
+.contact-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+  color: var(--white);
+}
+
+.contact-item p {
+  font-size: 1rem;
+  color: var(--gray);
+  margin: 0;
+}
+
+.contact-item p a {
+  color: var(--gray);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-item p a:hover {
+  color: var(--primary);
+}
+
+/* Style social links */
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.social-link {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  color: var(--white);
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background-color: var(--primary);
+  color: var(--dark);
+  transform: translateY(-5px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact-info {
+    padding: 1.5rem;
+  }
+  
+  .contact-item i {
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    margin-right: 1rem;
+  }
+  
+  .contact-item h3 {
+    font-size: 1.1rem;
+  }
+  
+  .contact-item p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-info {
+    padding: 1.2rem;
+  }
+  
+  .social-link {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+}

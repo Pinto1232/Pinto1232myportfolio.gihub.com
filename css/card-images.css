@@ -1,0 +1,174 @@
+/* Card Background Images */
+
+/* Card 1 - Car Crew */
+.card-1 {
+  background-image: url('../img/carcrew.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Card 2 - cDesign */
+.card-2 {
+  background-image: url('../img/cdesign_s.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Card 3 - ClickShop */
+.card-3 {
+  background-image: url('../img/cliqs.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Card 4 - Computer Mania */
+.card-4 {
+  background-image: url('../img/computer-manias.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Card 5 - E-learning Platform */
+.card-5 {
+  background-image: url('../img/elearning.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Card 6 - YDC Furniture */
+.card-6 {
+  background-image: url('../img/ydc-2.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Card 7 - Property FlexLog */
+.card-7 {
+  background-image: url('../img/FlexLogo.PNG');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Card 8 - Lose Control */
+.card-8 {
+  background-image: url('../img/lose_control.PNG');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Card 10 - Uscooters */
+.card-10 {
+  background-image: url('../img/scooters.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Card 11 - School Management */
+.card-11 {
+  background-image: url('../img/videoone.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Card 12 - Lose Control Promo */
+.card-12 {
+  background-image: url('../img/videostwo.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Card 13 - Work Hard Safety */
+.card-13 {
+  background-image: url('../img/work-hard.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Card 14 - YDC Lar do Sonho */
+.card-14 {
+  background-image: url('../img/ydc-2.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Card 15 - YDC Logo Design */
+.card-15 {
+  background-image: url('../img/ydc-logo.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Card 16 - Pintonet App Solutions */
+.card-16 {
+  background-image: url('../img/youtube.PNG');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Card 17 - Flexbox Tutorial */
+.card-17 {
+  background-image: url('../img/flexbox.PNG');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Card 18 - Netflix Clone */
+.card-18 {
+  background-image: url('../img/netflix-clone.PNG');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Card 19 - Responsive Landing Page */
+.card-19 {
+  background-image: url('../img/web-app.PNG');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Card 20 - E-commerce with Axios */
+.card-20 {
+  background-image: url('../img/e-commerce.PNG');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Card 21 - Span Digital */
+.card-21 {
+  background-image: url('../img/span-d.PNG');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Card 22 - Mweb */
+.card-22 {
+  background-image: url('../img/Mweb.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Fallback for missing images */
+.card-img {
+  position: relative;
+}
+
+.card-img::after {
+  content: "Image loading...";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-light);
+  color: var(--secondary);
+  font-size: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card-img:not([style*="background-image"])::after {
+  opacity: 1;
+}

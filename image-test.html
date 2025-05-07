@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Loading Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .test-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .card-img {
+            height: 200px;
+            position: relative;
+            overflow: hidden;
+            background-color: #1a1a2e;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .card-img.loading::after {
+            content: "Loading...";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #1a1a2e;
+            color: #00d2d3;
+            font-size: 1rem;
+            z-index: 2;
+            animation: pulse 1.5s infinite ease-in-out;
+        }
+        @keyframes pulse {
+            0% { opacity: 0.6; }
+            50% { opacity: 1; }
+            100% { opacity: 0.6; }
+        }
+        .test-info {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .test-info h2 {
+            margin-top: 0;
+        }
+        .test-info p {
+            line-height: 1.6;
+        }
+        .test-info code {
+            background-color: #f5f5f5;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Loading Test</h1>
+    
+    <div class="test-info">
+        <h2>Testing Image Loading with Case Sensitivity Fix</h2>
+        <p>This page tests our solution for loading images with case sensitivity issues. The script will:</p>
+        <ul>
+            <li>Try to load the image with the original path</li>
+            <li>If that fails, try alternative extensions (.png, .PNG, .jpg, etc.)</li>
+            <li>If all alternatives fail, use a fallback image</li>
+        </ul>
+        <p>Check the browser console for detailed loading information.</p>
+    </div>
+    
+    <div class="test-container">
+        <div class="card-img">
+            <img src="img/carcrew.png" alt="Car Crew">
+        </div>
+        
+        <div class="card-img">
+            <img src="img/cdesign_s.png" alt="cDesign">
+        </div>
+        
+        <div class="card-img">
+            <img src="img/flexbox.PNG" alt="Flexbox">
+        </div>
+        
+        <div class="card-img">
+            <img src="img/span-d.PNG" alt="Span Digital">
+        </div>
+        
+        <div class="card-img">
+            <img src="img/nonexistent-image.png" alt="Nonexistent Image">
+        </div>
+        
+        <div class="card-img">
+            <img src="img/e-commerce.png" alt="E-commerce (wrong case)">
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all card images
+            const cardImages = document.querySelectorAll('.card-img img');
+            
+            // Add loading class to all card image containers
+            cardImages.forEach(img => {
+                const container = img.parentElement;
+                container.classList.add('loading');
+                
+                // Fix case sensitivity issues
+                const originalSrc = img.getAttribute('src');
+                const imgName = originalSrc.split('/').pop(); // Get just the filename
+                
+                // Try both uppercase and lowercase extensions
+                const baseName = imgName.split('.')[0];
+                const possibleExtensions = ['.png', '.PNG', '.jpg', '.JPG', '.jpeg', '.JPEG', '.gif', '.GIF'];
+                
+                // Remove loading class when image loads successfully
+                img.onload = function() {
+                    container.classList.remove('loading');
+                    console.log(`Successfully loaded: ${img.src}`);
+                };
+                
+                // Try alternative case if image fails to load
+                img.onerror = function() {
+                    console.error(`Failed to load image: ${img.src}`);
+                    
+                    // Try alternative extensions
+                    let loaded = false;
+                    
+                    for (let ext of possibleExtensions) {
+                        if (loaded) break;
+                        
+                        const testSrc = `img/${baseName}${ext}`;
+                        
+                        // Create a test image to check if this version exists
+                        const testImg = new Image();
+                        testImg.onload = function() {
+                            if (!loaded) {
+                                img.src = testSrc;
+                                loaded = true;
+                                console.log(`Found alternative: ${testSrc}`);
+                            }
+                        };
+                        
+                        testImg.src = testSrc;
+                    }
+                    
+                    // If all else fails, use a fallback image
+                    setTimeout(() => {
+                        if (container.classList.contains('loading')) {
+                            img.src = 'img/logo.png'; // Use your logo as fallback
+                            console.log('Using fallback image');
+                        }
+                    }, 1000);
+                };
+            });
+        });
+    </script>
+</body>
+</html>

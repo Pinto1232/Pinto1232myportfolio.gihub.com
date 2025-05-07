@@ -1,0 +1,320 @@
+/* Modern Chronology Tree Styles */
+
+.chronology-section {
+  padding: 3rem 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  position: relative;
+  overflow: hidden;
+  margin-top: -2rem;
+}
+
+.chronology-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23bdc3c7' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
+  z-index: 0;
+}
+
+.chronology-container {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.chronology-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.chronology-title h2 {
+  font-size: 2rem;
+  color: #2d3436;
+  margin-bottom: 0.5rem;
+  position: relative;
+  display: inline-block;
+  font-weight: 700;
+}
+
+.chronology-title h2::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #6c5ce7, #a29bfe);
+  border-radius: 3px;
+}
+
+.chronology-title p {
+  font-size: 1rem;
+  color: #636e72;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Timeline styles */
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  width: 2px;
+  background: linear-gradient(to bottom, #6c5ce7, #a29bfe);
+  border-radius: 1px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 1.2rem;
+  width: 100%;
+  padding-left: 45px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-item::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.timeline-content {
+  position: relative;
+  padding: 0.8rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Timeline dot */
+.timeline-dot {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border: 3px solid #6c5ce7;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.timeline-item:hover .timeline-dot {
+  background: #6c5ce7;
+  box-shadow: 0 0 0 4px rgba(108, 92, 231, 0.2);
+}
+
+/* Timeline header with logo and title */
+.timeline-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.8rem;
+  flex-wrap: wrap;
+}
+
+/* Company logo */
+.company-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 6px;
+  background: #f8f9fa;
+  padding: 0.3rem;
+  border: 1px solid #eee;
+  margin-right: 0.8rem;
+}
+
+.timeline-title {
+  flex: 1;
+  min-width: 150px;
+}
+
+.timeline-title h3 {
+  font-size: 1.1rem;
+  margin: 0 0 0.2rem 0;
+  color: #2d3436;
+  font-weight: 600;
+}
+
+.timeline-content .company-name {
+  font-weight: 500;
+  color: #6c5ce7;
+  font-size: 0.9rem;
+  display: block;
+}
+
+.job-badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  background: rgba(108, 92, 231, 0.1);
+  color: #6c5ce7;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-left: auto;
+}
+
+.job-period {
+  display: inline-block;
+  color: #636e72;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.location {
+  font-size: 0.8rem;
+  color: #7f8c8d;
+  margin-bottom: 0.5rem;
+}
+
+.job-description {
+  font-size: 0.85rem;
+  color: #636e72;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+}
+
+/* Skills tags */
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.8rem;
+}
+
+.skill-tag {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  background: #f1f2f6;
+  color: #636e72;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (min-width: 992px) {
+  .timeline::before {
+    left: 50%;
+  }
+
+  .timeline-item {
+    padding-left: 0;
+  }
+
+  .timeline-item:nth-child(odd) {
+    padding-right: 50%;
+    padding-left: 0;
+  }
+
+  .timeline-item:nth-child(even) {
+    padding-left: 50%;
+    padding-right: 0;
+  }
+
+  .timeline-content {
+    width: 92%;
+  }
+
+  .timeline-item:nth-child(odd) .timeline-content {
+    margin-right: 1.5rem;
+    float: left;
+  }
+
+  .timeline-item:nth-child(even) .timeline-content {
+    margin-left: 1.5rem;
+    float: right;
+  }
+
+  .timeline-dot {
+    left: 50%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .timeline::before {
+    left: 30px;
+  }
+
+  .timeline-item {
+    padding-left: 60px;
+  }
+
+  .timeline-dot {
+    left: 30px;
+  }
+
+  .timeline-content {
+    width: 100%;
+  }
+
+  .chronology-container {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 767px) {
+  .chronology-title h2 {
+    font-size: 1.8rem;
+  }
+
+  .timeline-content {
+    padding: 0.8rem;
+  }
+
+  .company-logo {
+    width: 32px;
+    height: 32px;
+  }
+
+  .timeline-title h3 {
+    font-size: 0.95rem;
+  }
+
+  .job-badge {
+    margin-top: 0.5rem;
+    margin-left: 0;
+    font-size: 0.7rem;
+  }
+
+  .job-period,
+  .location {
+    font-size: 0.75rem;
+  }
+
+  .skill-tag {
+    font-size: 0.7rem;
+    padding: 0.15rem 0.4rem;
+  }
+
+  .timeline-item {
+    margin-bottom: 1rem;
+  }
+}

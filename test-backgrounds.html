@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .bg-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .bg-item {
+            height: 200px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        .bg-item h3 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0;
+            padding: 10px;
+            background-color: rgba(0,0,0,0.7);
+            color: white;
+            font-size: 16px;
+        }
+        
+        /* Direct background images */
+        .bg-1 {
+            background-image: url('img/carcrew.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .bg-2 {
+            background-image: url('img/cdesign_s.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .bg-3 {
+            background-image: url('img/cliqs.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .bg-4 {
+            background-image: url('img/computer-manias.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .bg-5 {
+            background-image: url('img/elearning.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .bg-6 {
+            background-image: url('img/ydc-2.png');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Background Image Test Page</h1>
+    
+    <div class="bg-container">
+        <div class="bg-item bg-1">
+            <h3>Car Crew (carcrew.png)</h3>
+        </div>
+        
+        <div class="bg-item bg-2">
+            <h3>cDesign (cdesign_s.png)</h3>
+        </div>
+        
+        <div class="bg-item bg-3">
+            <h3>ClickShop (cliqs.png)</h3>
+        </div>
+        
+        <div class="bg-item bg-4">
+            <h3>Computer Mania (computer-manias.png)</h3>
+        </div>
+        
+        <div class="bg-item bg-5">
+            <h3>E-learning Platform (elearning.png)</h3>
+        </div>
+        
+        <div class="bg-item bg-6">
+            <h3>YDC Furniture (ydc-2.png)</h3>
+        </div>
+    </div>
+</body>
+</html>

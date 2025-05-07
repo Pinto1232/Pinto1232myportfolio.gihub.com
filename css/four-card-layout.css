@@ -1,0 +1,156 @@
+/* Four Card Layout - Override to display 4 cards per row */
+
+/* Parent container adjustments */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Main container for cards */
+.container-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* 4 equal columns */
+  gap: 0;
+  /* Remove gap between cards */
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 1400px;
+  /* Ensure container doesn't get too wide */
+  margin: 0 auto;
+  /* Center the container */
+}
+
+/* Adjust card width to fit 4 per row */
+.card {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 0;
+  /* Remove border radius for seamless grid */
+  border: none;
+  /* Remove border */
+  box-shadow: none;
+  /* Remove default shadow */
+  transition: all 0.3s ease;
+}
+
+/* Add subtle border between cards */
+.card {
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Add hover effect without spacing */
+.card:hover {
+  transform: scale(1.02);
+  /* Slightly scale up instead of moving down */
+  z-index: 2;
+  /* Ensure hovered card appears above others */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  /* Add shadow on hover */
+}
+
+/* Adjust card content for smaller cards */
+.card h2 {
+  font-size: 1.3rem;
+  padding: 1.2rem 1.2rem 0.5rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  padding: 0 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.card a {
+  margin: 0 1.2rem 1.2rem;
+  padding: 0.7rem 0;
+}
+
+/* Adjust image height for better proportions */
+.card-img {
+  height: 180px;
+  border-radius: 0;
+  /* Remove border radius for seamless look */
+}
+
+/* Ensure images fill the container properly */
+.card-img img {
+  border-radius: 0;
+  /* Remove border radius for seamless look */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .container-card {
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 cards per row on medium screens */
+  }
+
+  /* Adjust card styling for 3-column layout */
+  .card h2 {
+    font-size: 1.4rem;
+    padding: 1.3rem 1.3rem 0.5rem;
+  }
+
+  .card p {
+    font-size: 0.92rem;
+    padding: 0 1.3rem;
+    margin-bottom: 1.3rem;
+  }
+
+  .card a {
+    margin: 0 1.3rem 1.3rem;
+    padding: 0.75rem 0;
+  }
+
+  .card-img {
+    height: 190px;
+  }
+}
+
+@media (max-width: 900px) {
+  .container-card {
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 cards per row on smaller screens */
+  }
+
+  /* Adjust card styling for 2-column layout */
+  .card h2 {
+    font-size: 1.5rem;
+    padding: 1.5rem 1.5rem 0.5rem;
+  }
+
+  .card p {
+    font-size: 0.95rem;
+    padding: 0 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .card a {
+    margin: 0 1.5rem 1.5rem;
+    padding: 0.8rem 0;
+  }
+
+  .card-img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container-card {
+    grid-template-columns: 1fr;
+    /* 1 card per row on mobile */
+    gap: 0;
+    /* Maintain no gap on mobile */
+    padding: 0;
+  }
+
+  /* Add some margin between cards on mobile for better readability */
+  .card {
+    margin-bottom: 1px;
+    /* Just a thin line between cards */
+  }
+}

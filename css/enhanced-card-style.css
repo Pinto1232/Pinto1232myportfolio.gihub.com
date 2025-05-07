@@ -1,0 +1,249 @@
+/* Enhanced Card Styling with Beautiful Design */
+
+/* Card structure with improved styling */
+.card {
+  width: 100%;
+  max-width: 100%;
+  border: none;
+  background-color: #ffffff !important;
+  /* Force white background */
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+  /* Enhanced shadow */
+  border-radius: 8px !important;
+  margin-bottom: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.05) !important;
+  /* Subtle border */
+}
+
+/* Modern hover effect with enhanced shadow */
+.card:hover {
+  transform: translateY(-8px);
+  z-index: 2;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Accent line at top of card - gradient inspired by the previous contact wrapper */
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #4a6bff, #6b4aff);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+/* Card image area with improved styling */
+.card-img {
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(30, 30, 50, 0.05);
+  /* Using the previous contact wrapper background */
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.card:hover .card-img img {
+  transform: scale(1.08);
+}
+
+/* Improved overlay for images */
+.card-img::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.7) 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Technology overlay info */
+.overlay-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 15px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-size: 0.8rem;
+  z-index: 2;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.card:hover .overlay-info {
+  transform: translateY(0);
+}
+
+/* Card content styling with improved typography */
+.card h2 {
+  font-size: 1.3rem;
+  padding: 1.2rem 1.2rem 0.5rem;
+  margin: 0;
+  color: #333;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  position: relative;
+  text-align: left;
+  line-height: 1.3;
+  height: 3.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: color 0.3s ease;
+}
+
+.card:hover h2 {
+  color: #4a6bff;
+}
+
+.card p {
+  font-size: 0.9rem;
+  padding: 0 1.2rem;
+  margin: 0 0 1.2rem 0;
+  color: #666;
+  line-height: 1.6;
+  flex-grow: 1;
+  height: 4.8rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+  transition: color 0.3s ease;
+}
+
+.card:hover p {
+  color: #444;
+}
+
+/* Enhanced button styling */
+.card a {
+  margin: 0 1.2rem 1.2rem;
+  padding: 0.8rem 0;
+  background-color: rgba(74, 107, 255, 0.1);
+  color: #4a6bff;
+  text-align: center;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 1px solid rgba(74, 107, 255, 0.3);
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  height: 2.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Button hover effect */
+.card a:hover {
+  background-color: #4a6bff;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(74, 107, 255, 0.3);
+}
+
+/* Button shine effect */
+.card a::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(to bottom right,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.3) 100%);
+  transform: rotate(30deg);
+  transition: transform 0.5s ease;
+  opacity: 0;
+}
+
+.card a:hover::after {
+  opacity: 1;
+  transform: rotate(30deg) translate(10%, 10%);
+}
+
+/* Icon styling in buttons */
+.card a i {
+  font-size: 1rem;
+  margin-right: 0.3rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .card-img {
+    height: 190px;
+  }
+
+  .card h2 {
+    font-size: 1.4rem;
+    height: 3.7rem;
+  }
+
+  .card p {
+    height: 4.9rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .card-img {
+    height: 200px;
+  }
+
+  .card h2 {
+    font-size: 1.5rem;
+    height: 3.9rem;
+  }
+
+  .card p {
+    height: 5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    margin-bottom: 20px;
+  }
+
+  .card h2 {
+    height: auto;
+    min-height: 3.5rem;
+  }
+
+  .card p {
+    height: auto;
+    min-height: 4.8rem;
+  }
+}

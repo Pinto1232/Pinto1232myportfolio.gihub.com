@@ -1,0 +1,199 @@
+/* Modal Fix CSS */
+
+/* Override modal styles to ensure they display properly */
+#modal-background,
+#modal-background-c,
+#modal-background-b {
+  display: none;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background-color: rgba(26, 26, 46, 0.95) !important;
+  z-index: 9999 !important;
+  overflow: auto !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 20px !important;
+  box-sizing: border-box !important;
+}
+
+#modal-background.active,
+#modal-background-c.active,
+#modal-background-b.active {
+  display: flex !important;
+  opacity: 1 !important;
+  animation: modalFadeIn 0.3s ease forwards !important;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0 !important;
+  }
+
+  to {
+    opacity: 1 !important;
+  }
+}
+
+#modal,
+#modal-c,
+#modal-b {
+  background-color: var(--dark-light) !important;
+  border-radius: 10px !important;
+  max-width: 1200px !important;
+  width: 95% !important;
+  height: auto !important;
+  margin: auto !important;
+  position: relative !important;
+  display: flex !important;
+  flex-direction: row !important;
+  overflow: hidden !important;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5) !important;
+  box-sizing: border-box !important;
+  animation: modalContentSlideIn 0.4s ease forwards !important;
+  transform: translateY(30px) !important;
+  opacity: 0 !important;
+}
+
+@keyframes modalContentSlideIn {
+  to {
+    transform: translateY(0) !important;
+    opacity: 1 !important;
+  }
+}
+
+@media (max-width: 992px) {
+
+  #modal,
+  #modal-c,
+  #modal-b {
+    flex-direction: column !important;
+    max-width: 800px !important;
+  }
+}
+
+.brand {
+  flex: 1 !important;
+  width: 50% !important;
+  overflow: hidden !important;
+  position: relative !important;
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 500px !important;
+  max-height: 600px !important;
+  box-sizing: border-box !important;
+}
+
+.brand img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  padding: 1rem !important;
+  box-sizing: border-box !important;
+  max-height: 100% !important;
+}
+
+.info {
+  flex: 1 !important;
+  width: 50% !important;
+  padding: 2.5rem !important;
+  background-color: var(--dark-light) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  overflow-y: auto !important;
+  min-height: 500px !important;
+  max-height: 600px !important;
+  box-sizing: border-box !important;
+}
+
+@media (max-width: 992px) {
+
+  #modal,
+  #modal-c,
+  #modal-b {
+    flex-direction: column !important;
+    height: auto !important;
+  }
+
+  .brand {
+    width: 100% !important;
+    min-height: 350px !important;
+    max-height: 400px !important;
+  }
+
+  .info {
+    width: 100% !important;
+    min-height: 350px !important;
+    max-height: none !important;
+    overflow-y: visible !important;
+  }
+}
+
+@media (max-width: 768px) {
+
+  #modal-background,
+  #modal-background-c,
+  #modal-background-b {
+    align-items: flex-start !important;
+    padding: 10px !important;
+  }
+
+  #modal,
+  #modal-c,
+  #modal-b {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .brand {
+    min-height: 300px !important;
+  }
+
+  .info {
+    min-height: 300px !important;
+    padding: 2rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .brand {
+    min-height: 250px !important;
+  }
+
+  .info {
+    min-height: 250px !important;
+    padding: 1.5rem !important;
+  }
+}
+
+/* Close button styles */
+#close-btn,
+#close-btn-c,
+#close-btn-b {
+  position: absolute !important;
+  top: 15px !important;
+  right: 15px !important;
+  font-size: 24px !important;
+  color: white !important;
+  cursor: pointer !important;
+  z-index: 10 !important;
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: all 0.3s ease !important;
+}
+
+#close-btn:hover,
+#close-btn-c:hover,
+#close-btn-b:hover {
+  background-color: rgba(255, 0, 0, 0.7) !important;
+  transform: rotate(90deg) !important;
+}

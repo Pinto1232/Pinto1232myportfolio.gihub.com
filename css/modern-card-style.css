@@ -1,0 +1,227 @@
+/* Modern Card Styling */
+
+/* Modern card base styling */
+.card {
+  width: 100%;
+  max-width: 100%;
+  border: none;
+  background-color: rgba(30, 30, 50, 0.7);
+  /* Slightly lighter than background */
+  backdrop-filter: blur(5px);
+  /* Modern glass effect */
+  -webkit-backdrop-filter: blur(5px);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  /* Smooth animation */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Modern hover effect */
+.card:hover {
+  transform: translateY(-5px);
+  /* Subtle lift effect */
+  z-index: 2;
+  /* Ensure hovered card appears above others */
+  background-color: rgba(35, 35, 60, 0.9);
+  /* Slightly darker on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  /* Subtle shadow on hover */
+}
+
+/* Add subtle accent line at top of card */
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #00d2d3, #5f27cd);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+/* Card image styling */
+.card-img {
+  height: 180px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  border-radius: 0;
+}
+
+.card:hover .card-img img {
+  transform: scale(1.1);
+}
+
+/* Modern overlay for images */
+.card-img::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.8) 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Card content styling with better alignment */
+.card h2 {
+  font-size: 1.3rem;
+  padding: 1.2rem 1.2rem 0.5rem;
+  margin: 0;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  position: relative;
+  text-align: left;
+  line-height: 1.3;
+  height: 3.5rem;
+  /* Fixed height for title to ensure alignment */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card p {
+  font-size: 0.9rem;
+  padding: 0 1.2rem;
+  margin: 0 0 1.2rem 0;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+  flex-grow: 1;
+  /* Make paragraph take available space */
+  height: 4.8rem;
+  /* Fixed height for 3 lines of text */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+}
+
+/* Modern button styling */
+.card a {
+  margin: 0 1.2rem 1.2rem;
+  padding: 0.8rem 0;
+  background-color: rgba(0, 210, 211, 0.1);
+  color: #00d2d3;
+  text-align: center;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 1px solid rgba(0, 210, 211, 0.2);
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  height: 2.5rem;
+  /* Fixed height for buttons */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Button hover effect */
+.card a:hover {
+  background-color: rgba(0, 210, 211, 0.9);
+  color: #1a1a2e;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 210, 211, 0.2);
+}
+
+/* Button shine effect */
+.card a::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(to bottom right,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.1) 100%);
+  transform: rotate(30deg);
+  transition: transform 0.5s ease;
+  opacity: 0;
+}
+
+.card a:hover::after {
+  opacity: 1;
+  transform: rotate(30deg) translate(10%, 10%);
+}
+
+/* Icon styling in buttons */
+.card a i {
+  font-size: 1rem;
+  margin-right: 0.3rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .card-img {
+    height: 190px;
+  }
+
+  .card h2 {
+    font-size: 1.4rem;
+    height: 3.7rem;
+  }
+
+  .card p {
+    height: 4.9rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .card-img {
+    height: 200px;
+  }
+
+  .card h2 {
+    font-size: 1.5rem;
+    height: 3.9rem;
+  }
+
+  .card p {
+    height: 5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    margin-bottom: 1px;
+  }
+
+  .card h2 {
+    height: auto;
+    min-height: 3.5rem;
+  }
+
+  .card p {
+    height: auto;
+    min-height: 4.8rem;
+  }
+}

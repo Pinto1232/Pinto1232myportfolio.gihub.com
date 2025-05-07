@@ -1,0 +1,329 @@
+/* White Contact Section Styles */
+
+/* Update contact info section with white background and modern styling */
+.contact-info {
+  background-color: #ffffff !important;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08) !important;
+  border-radius: 16px !important;
+  border: 1px solid rgba(0, 0, 0, 0.03) !important;
+  padding: 2.8rem !important;
+  max-width: 600px !important;
+  width: 100% !important;
+  position: relative !important;
+  overflow: hidden !important;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+}
+
+/* Add subtle accent line at top */
+.contact-info::before {
+  content: '' !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 4px !important;
+  background: linear-gradient(90deg, #4a6bff, #6b4aff) !important;
+  opacity: 1 !important;
+}
+
+/* Add subtle pattern overlay for texture */
+.contact-info::after {
+  content: '' !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background-image: radial-gradient(rgba(74, 107, 255, 0.03) 1px, transparent 1px) !important;
+  background-size: 20px 20px !important;
+  pointer-events: none !important;
+  z-index: 0 !important;
+}
+
+/* Ensure content appears above the pattern */
+.contact-details {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+/* Update text colors and styling for modern look */
+.contact-item h3 {
+  color: #333333 !important;
+  font-weight: 600 !important;
+  font-size: 1.1rem !important;
+  margin-bottom: 0.4rem !important;
+  letter-spacing: 0.5px !important;
+  text-transform: uppercase !important;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.contact-item p,
+.contact-item p a {
+  color: #555555 !important;
+  font-size: 1rem !important;
+  line-height: 1.5 !important;
+  transition: all 0.3s ease !important;
+  font-weight: 400 !important;
+}
+
+.contact-item p a {
+  position: relative !important;
+  text-decoration: none !important;
+  padding-bottom: 2px !important;
+}
+
+.contact-item p a::after {
+  content: '' !important;
+  position: absolute !important;
+  width: 0 !important;
+  height: 1px !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  background-color: #4a6bff !important;
+  transition: width 0.3s ease !important;
+}
+
+.contact-item p a:hover {
+  color: #4a6bff !important;
+}
+
+.contact-item p a:hover::after {
+  width: 100% !important;
+}
+
+/* Update border color for contact items */
+.contact-item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+  display: flex !important;
+  align-items: center !important;
+  margin-bottom: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+}
+
+.contact-item:last-child {
+  border-bottom: none !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Update icon colors and background for modern look */
+.contact-item i {
+  background-color: rgba(74, 107, 255, 0.1) !important;
+  color: #4a6bff !important;
+  font-size: 1.5rem !important;
+  margin-right: 1.5rem !important;
+  width: 56px !important;
+  height: 56px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 12px !important;
+  /* Slightly rounded square for modern look */
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+  box-shadow: 0 2px 10px rgba(74, 107, 255, 0.1) !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.contact-item i::after {
+  content: '' !important;
+  position: absolute !important;
+  top: -50% !important;
+  left: -50% !important;
+  width: 200% !important;
+  height: 200% !important;
+  background: linear-gradient(to bottom right,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.3) 100%) !important;
+  transform: rotate(30deg) !important;
+  transition: transform 0.5s ease !important;
+  opacity: 0 !important;
+}
+
+.contact-item:hover i {
+  background-color: #4a6bff !important;
+  color: #ffffff !important;
+  transform: translateY(-5px) !important;
+  box-shadow: 0 5px 15px rgba(74, 107, 255, 0.3) !important;
+}
+
+.contact-item:hover i::after {
+  opacity: 1 !important;
+  transform: rotate(30deg) translate(10%, 10%) !important;
+}
+
+/* Update social link colors and styling for modern look */
+.social-links {
+  display: flex !important;
+  justify-content: center !important;
+  margin-top: 2rem !important;
+  gap: 1rem !important;
+}
+
+.social-link {
+  width: 42px !important;
+  height: 42px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background-color: rgba(74, 107, 255, 0.08) !important;
+  color: #4a6bff !important;
+  font-size: 1.1rem !important;
+  border-radius: 10px !important;
+  /* Slightly rounded square for modern look */
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+  position: relative !important;
+  overflow: hidden !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05) !important;
+}
+
+.social-link::after {
+  content: '' !important;
+  position: absolute !important;
+  top: -50% !important;
+  left: -50% !important;
+  width: 200% !important;
+  height: 200% !important;
+  background: linear-gradient(to bottom right,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.3) 100%) !important;
+  transform: rotate(30deg) !important;
+  transition: transform 0.5s ease !important;
+  opacity: 0 !important;
+}
+
+.social-link:hover {
+  background-color: #4a6bff !important;
+  color: #ffffff !important;
+  transform: translateY(-5px) !important;
+  box-shadow: 0 5px 15px rgba(74, 107, 255, 0.3) !important;
+}
+
+.social-link:hover::after {
+  opacity: 1 !important;
+  transform: rotate(30deg) translate(10%, 10%) !important;
+}
+
+/* Add enhanced hover effect */
+.contact-info:hover {
+  transform: translateY(-8px) !important;
+  box-shadow: 0 20px 40px rgba(74, 107, 255, 0.15) !important;
+}
+
+/* Add subtle pulse animation to the gradient line on hover */
+@keyframes gradientPulse {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.contact-info:hover::before {
+  background: linear-gradient(90deg, #4a6bff, #6b4aff, #4a6bff) !important;
+  background-size: 200% 200% !important;
+  animation: gradientPulse 3s ease infinite !important;
+}
+
+/* Enhance contact details container */
+.contact-details {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 1rem !important;
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+/* Add subtle divider styling */
+.contact-item {
+  position: relative !important;
+}
+
+.contact-item:not(:last-child)::after {
+  content: '' !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: 85% !important;
+  height: 1px !important;
+  background: linear-gradient(to right,
+      rgba(0, 0, 0, 0.01),
+      rgba(0, 0, 0, 0.05) 50%,
+      rgba(0, 0, 0, 0.01)) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .contact-info {
+    padding: 2.2rem !important;
+  }
+
+  .contact-item i {
+    width: 50px !important;
+    height: 50px !important;
+    font-size: 1.3rem !important;
+    margin-right: 1.2rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-info {
+    padding: 2rem !important;
+    border-radius: 12px !important;
+  }
+
+  .contact-item i {
+    width: 45px !important;
+    height: 45px !important;
+    font-size: 1.2rem !important;
+    margin-right: 1rem !important;
+  }
+
+  .contact-item h3 {
+    font-size: 1rem !important;
+  }
+
+  .contact-item p,
+  .contact-item p a {
+    font-size: 0.9rem !important;
+  }
+
+  .social-link {
+    width: 38px !important;
+    height: 38px !important;
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-info {
+    padding: 1.8rem !important;
+    border-radius: 10px !important;
+  }
+
+  .contact-item {
+    padding-bottom: 1.2rem !important;
+    margin-bottom: 1.2rem !important;
+  }
+
+  .contact-item i {
+    width: 40px !important;
+    height: 40px !important;
+    font-size: 1.1rem !important;
+    margin-right: 0.8rem !important;
+    border-radius: 8px !important;
+  }
+
+  .social-link {
+    width: 36px !important;
+    height: 36px !important;
+    border-radius: 8px !important;
+  }
+}

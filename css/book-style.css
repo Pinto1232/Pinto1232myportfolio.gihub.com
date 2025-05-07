@@ -1,0 +1,442 @@
+/* Book-style About Section */
+
+/* Book Container */
+.book-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  perspective: 2000px;
+}
+
+.book {
+  display: flex;
+  width: 100%;
+  height: auto;
+  min-height: 500px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.book-animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Book flip animation for mobile */
+.book.flipped .book-page-left {
+  transform: rotateY(-180deg);
+  z-index: 0;
+}
+
+.book.flipped .book-page-right {
+  z-index: 1;
+}
+
+/* Book Pages */
+.book-page {
+  background-color: var(--dark-light);
+  border-radius: 5px;
+  box-shadow: var(--shadow-lg);
+  padding: 2rem;
+  width: 50%;
+  position: relative;
+  transition: all 0.5s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.book-page-left {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: none;
+  background: linear-gradient(to right, rgba(26, 26, 46, 0.9), rgba(22, 33, 62, 0.9));
+  transform-origin: right center;
+  z-index: 1;
+}
+
+.book-page-right {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: none;
+  background: linear-gradient(to left, rgba(26, 26, 46, 0.9), rgba(22, 33, 62, 0.9));
+  transform-origin: left center;
+  z-index: 0;
+}
+
+/* Book Spine */
+.book-spine {
+  width: 40px;
+  background: linear-gradient(to right, var(--primary-dark), var(--primary), var(--primary-dark));
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  transform: translateX(-50%);
+  z-index: 2;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.spine-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Page Content */
+.page-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+
+/* Profile Header */
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.avatar-icon {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--secondary);
+  box-shadow: var(--shadow-lg);
+  margin-bottom: 1.5rem;
+  transition: transform var(--transition-normal);
+}
+
+.avatar-icon:hover {
+  transform: scale(1.05);
+}
+
+.profile-title {
+  text-align: center;
+}
+
+.title-header {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: var(--white);
+  position: relative;
+  display: inline-block;
+}
+
+.title-header::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 2px;
+  background-color: var(--secondary);
+}
+
+.paragraph-body {
+  color: var(--light);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.experience-tag {
+  display: inline-block;
+  background-color: rgba(0, 210, 211, 0.2);
+  color: var(--secondary);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+/* Profile Details */
+.profile-details {
+  margin-bottom: 2rem;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  color: var(--light);
+}
+
+.detail-item i {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(0, 210, 211, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--secondary);
+  margin-right: 1rem;
+  font-size: 0.9rem;
+}
+
+.detail-item span {
+  font-size: 0.95rem;
+}
+
+/* Profile Links */
+.profile-links {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.git-account {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 0.8rem 1rem;
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+  color: var(--light);
+}
+
+.git-account i {
+  color: var(--secondary);
+  font-size: 1.2rem;
+}
+
+.git-account:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  transform: translateY(-3px);
+}
+
+.btn-cv,
+.btn-cover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+/* Professional Summary */
+.title-main {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: var(--white);
+  position: relative;
+  display: inline-block;
+}
+
+.title-main::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background-color: var(--secondary);
+}
+
+.summary-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.paragraph-descript {
+  color: var(--light);
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+  font-size: 0.95rem;
+}
+
+/* Key Skills */
+.key-skills {
+  margin-top: auto;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  border-left: 3px solid var(--secondary);
+}
+
+.key-skills h4 {
+  color: var(--white);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.8rem;
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  color: var(--light);
+  font-size: 0.9rem;
+}
+
+.skills-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--secondary);
+  font-size: 1.2rem;
+}
+
+/* Book Page Decorations */
+.book-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 30px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.1), transparent);
+  z-index: 0;
+}
+
+.book-page-left::before {
+  right: 0;
+}
+
+.book-page-right::before {
+  left: 0;
+  transform: scaleX(-1);
+}
+
+/* Hover Effects */
+.book:hover .book-page-left {
+  transform: translateX(-10px) rotateY(-5deg);
+  box-shadow: 10px 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.book:hover .book-page-right {
+  transform: translateX(10px) rotateY(5deg);
+  box-shadow: -10px 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .book {
+    flex-direction: column;
+    min-height: auto;
+    perspective: none;
+  }
+
+  .book-page {
+    width: 100%;
+    border-radius: 5px;
+    transition: all 0.6s ease;
+    backface-visibility: hidden;
+  }
+
+  .book-page-left {
+    border-bottom-right-radius: 5px;
+    border-right: none;
+    border-bottom: none;
+    z-index: 1;
+    margin-bottom: 0;
+  }
+
+  .book-page-right {
+    border-top-left-radius: 5px;
+    border-left: none;
+    border-top: none;
+    z-index: 0;
+    margin-top: 0;
+    position: relative;
+  }
+
+  .book-spine {
+    width: 100%;
+    height: 40px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .book-spine:hover {
+    background: linear-gradient(to right, var(--secondary), var(--primary), var(--secondary));
+  }
+
+  .book-spine::after {
+    content: 'Click to flip';
+    position: absolute;
+    right: 10px;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .spine-text {
+    writing-mode: horizontal-tb;
+    transform: none;
+  }
+
+  .skills-list {
+    grid-template-columns: 1fr;
+  }
+
+  /* Mobile flip animation */
+  .book-page-left,
+  .book-page-right {
+    position: relative;
+    transition: transform 0.6s ease, z-index 0.1s ease;
+  }
+
+  .book.flipped .book-spine::after {
+    content: 'Click to flip back';
+  }
+}
+
+@media (max-width: 576px) {
+  .book-page {
+    padding: 1.5rem;
+  }
+
+  .avatar-icon {
+    width: 120px;
+    height: 120px;
+  }
+
+  .title-header {
+    font-size: 1.5rem;
+  }
+
+  .title-main {
+    font-size: 1.5rem;
+  }
+
+  .paragraph-body,
+  .paragraph-descript {
+    font-size: 0.9rem;
+  }
+
+  .key-skills {
+    padding: 1rem;
+  }
+}

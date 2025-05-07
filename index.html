@@ -7,49 +7,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/@icon/unicons/unicons.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/modal.css">
-    <title>Pinto Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/modern-style.css">
+    <link rel="stylesheet" href="css/modern-components.css">
+    <link rel="stylesheet" href="css/modern-sections.css">
+    <link rel="stylesheet" href="css/modern-footer.css">
+    <link rel="stylesheet" href="css/fluid-fixes.css">
+    <link rel="stylesheet" href="css/book-style.css">
+    <link rel="stylesheet" href="css/simple-modal.css">
+    <link rel="stylesheet" href="css/simple-card-fix.css">
+    <link rel="stylesheet" href="css/four-card-layout.css">
+    <link rel="stylesheet" href="css/white-card-style.css">
+    <link rel="stylesheet" href="css/style-enhancements.css">
+    <link rel="stylesheet" href="css/card-spacing.css">
+    <link rel="stylesheet" href="css/contact-center.css">
+    <link rel="stylesheet" href="css/enhanced-footer.css">
+    <link rel="stylesheet" href="css/chronology-tree.css">
+    <link rel="stylesheet" href="css/button-fixes.css">
+    <link rel="stylesheet" href="css/social-links.css">
+    <link rel="stylesheet" href="css/reduced-spacing.css">
+    <link rel="stylesheet" href="css/white-contact.css">
+    <link rel="stylesheet" href="css/enhanced-card-style.css">
+    <title>Pinto Manuel | Frontend & FullStack Developer</title>
 </head>
 
-<div>
+<body>
     <!-- Header start-->
     <header class="header">
         <div class="container">
-            <div class="row ">
-                <div class="logo">
-                    <a href="#" class="logo-text"> <img class="main-logo" src="img/favicon.ico" alt="logo"> Coder Expert
-                    </a>
-                </div>
-                <button name="button" aria-label="Name" class="nav-toggler">
-                    <span></span>
-                </button>
-                <nav class="nav">
-                    <ul>
-                        <li class="nav-item"><a href="#home">Home</a></li>
-                        <li class="nav-item"><a href="#about"> About</a></li>
-                        <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item"><a href="#stack"> My Stack</a></li>
-                        <!-- <li class="nav-item"><a href="#contact"> Contact</a></li> -->
-                    </ul>
-                </nav>
+            <div class="logo">
+                <a href="#" class="logo-text">
+                    <img class="main-logo" src="img/favicon.ico" alt="logo">
+                    <span>Pinto Manuel</span>
+                </a>
             </div>
+            <button name="button" aria-label="Toggle Navigation" class="nav-toggler">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav">
+                <ul>
+                    <li class="nav-item"><a href="#home">Home</a></li>
+                    <li class="nav-item"><a href="#about">About</a></li>
+                    <li class="nav-item"><a href="#experience">Experience</a></li>
+                    <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a href="#stack">My Stack</a></li>
+                    <li class="nav-item"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <!-- Header end-->
 
     <!-- home section start-->
     <section class="home-section" id="home">
-        <div class="home-bg"> </div>
+        <div class="home-bg"></div>
         <div class="container">
-            <div class="min-vh-100 alight-items-center">
-                <div class="home-text">
-                    <h1>Welcome to my portfolio</h1>
-                    <p class="topSubhead">
-                        The Desire To Create Is One Of The Deepest Yearnings Of The Human Soul. Quote "Dieter F.
-                        UchtDorf"
-                    </p>
-                    <a class="btn btn-default" href="img/Curriculum_updated.pdf" download>Download my CV</a>
+            <div class="home-text">
+                <h1>Frontend & FullStack Developer</h1>
+                <p class="topSubhead">
+                    With 5+ years of experience crafting beautiful, responsive, and user-friendly web applications.
+                    Turning ideas into digital reality.
+                </p>
+                <div class="home-buttons">
+                    <a class="btn btn-primary" href="img/CV.pdf" download>
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                    <a class="btn btn-outline" href="#portfolio">View My Work</a>
                 </div>
             </div>
         </div>
@@ -57,576 +82,1544 @@
     <!-- home section end-->
 
     <!--About me section-->
-    <section class="about-section" id="about">
-        <div class="about-container">
-            <div>
-                <img class="avatar-icon" src="./img/pinto.png" alt="ceo">
-                <h3 class="title-header">Pinto Manuel</h3>
-                <p class="paragraph-body">6 years of Web Development Experience</p>
-
-                <a class="git-account" href="https://github.com/Pinto1232?tab=repositories">
-                    <h4>Click to go to my Github Account</h4>
-                </a>
-                <a href="./img/Cover-Letter.pdf" class="btn btn-primary btn-cover">Download my Cover letter</a>
+    <section class="about-section section" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
             </div>
-            <div class="helper-div">
-                <h3 class="title title-main">Dear Sir or Madam</h3>
-                <p class="paragraph-descript">
-                    As a seasoned and meticulous Frontend Web Developer with 5 years of industry experience, I am reaching out to express my genuine interest in the Junior or Mid-level Frontend Web Development position at your esteemed company. My extensive background in web development, coupled with my keen attention to detail, uniquely positions me to contribute effectively to your team and uphold your organizational standards of excellence. I eagerly anticipate the opportunity to discuss how my skills and expertise align with your company's goals. Thank you for considering my application. I look forward to the possibility of contributing to your team. Yours sincerely, Pinto Manuel
-                </p>
+
+            <div class="book-container">
+                <div class="book">
+                    <div class="book-page book-page-left">
+                        <div class="page-content">
+                            <div class="profile-header">
+                                <img class="avatar-icon" src="./img/pinto.png" alt="Pinto Manuel">
+                                <div class="profile-title">
+                                    <h3 class="title-header">Pinto Manuel</h3>
+                                    <p class="paragraph-body">Frontend & FullStack Developer</p>
+                                    <p class="experience-tag">5+ years of experience</p>
+                                </div>
+                            </div>
+
+                            <div class="profile-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Cape Town, South Africa</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>pintotnet@gmail.com</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-phone"></i>
+                                    <span>+27744330715</span>
+                                </div>
+                            </div>
+
+                            <div class="profile-links">
+                                <div class="social-links-group">
+                                    <a class="git-account" href="https://github.com/Pinto1232" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                        <span>GitHub Repositories</span>
+                                    </a>
+                                    <a class="git-account youtube-account" href="https://www.youtube.com/@ThePintoCode"
+                                        target="_blank">
+                                        <i class="fab fa-youtube"></i>
+                                        <span>YouTube Channel</span>
+                                    </a>
+                                    <a class="git-account linkedin-account"
+                                        href="https://www.linkedin.com/in/pinto-manuel-40262893/" target="_blank">
+                                        <i class="fab fa-linkedin-in"></i>
+                                        <span>LinkedIn Profile</span>
+                                    </a>
+                                </div>
+                                <div class="download-buttons">
+                                    <a href="./img/CV.pdf" class="btn btn-primary btn-cv" download>
+                                        <i class="fas fa-file-download"></i> <span>Download CV</span>
+                                    </a>
+                                    <a href="./img/cover.pdf" class="btn btn-primary btn-cover" download>
+                                        <i class="fas fa-file-download"></i> <span>Download Cover Letter</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="book-spine">
+                        <div class="spine-text">
+                            <span>My Story</span>
+                        </div>
+                    </div>
+
+                    <div class="book-page book-page-right">
+                        <div class="page-content">
+                            <h3 class="title title-main">Professional Summary</h3>
+                            <div class="summary-content">
+                                <p class="paragraph-descript">
+                                    As a versatile Frontend Engineer with over 6 years of experience across South
+                                    Africa's tech landscape, I've built a reputation for delivering exceptional web
+                                    solutions that combine technical excellence with creative vision. My journey from
+                                    PHP development to modern JavaScript frameworks has equipped me with a comprehensive
+                                    understanding of the web development ecosystem.
+                                </p>
+
+                                <p class="paragraph-descript">
+                                    Working with companies like MWEB, DeepAlert, and Pisval Tech has honed my ability to
+                                    adapt to diverse environments—from established corporations to innovative startups.
+                                    I excel in translating complex requirements into elegant, user-centered interfaces
+                                    that drive business growth and enhance user engagement.
+                                </p>
+
+                                <p class="paragraph-descript">
+                                    My expertise spans both frontend and backend technologies, with particular strength
+                                    in React, Vue.js, and modern JavaScript. I'm equally comfortable working
+                                    independently as a contractor or collaborating within cross-functional teams,
+                                    bringing a solution-oriented mindset to every project I undertake.
+                                </p>
+
+                                <div class="key-skills">
+                                    <h4>Key Skills</h4>
+                                    <ul class="skills-list">
+                                        <li><span>Frontend Frameworks (React, Vue.js)</span></li>
+                                        <li><span>Full-Stack Development</span></li>
+                                        <li><span>Responsive & Adaptive Design</span></li>
+                                        <li><span>UI/UX Implementation</span></li>
+                                        <li><span>MongoDB & SQL Databases</span></li>
+                                        <li><span>Modern JavaScript (ES6+)</span></li>
+                                        <li><span>Contract & Remote Work</span></li>
+                                        <li><span>CI/CD & DevOps Integration</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <!--End of about me section-->
 
+    <!-- Chronology Tree Section -->
+    <section class="chronology-section" id="experience">
+        <div class="container chronology-container">
+            <div class="chronology-title">
+                <h2>My Professional Journey</h2>
+                <p>A timeline of my career path and the companies I've worked with over the years</p>
+            </div>
 
-    <section class="portfolio-header">
-        <h3>My Portfolio</h3>
+            <div class="timeline">
+                <!-- Timeline Item 1 (Current) -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <img src="img/deepalert-logo.png" alt="DeepAlert" class="company-logo">
+                            <div class="timeline-title">
+                                <h3>Frontend Engineer</h3>
+                                <span class="company-name">DeepAlert</span>
+                            </div>
+                            <span class="job-badge">Contract</span>
+                        </div>
+                        <span class="job-period">Mar 2024 - Present</span>
+                        <div class="skills-tags">
+                            <span class="skill-tag">Software Development</span>
+                            <span class="skill-tag">Artificial Intelligence</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <img src="img/Mweb.png" alt="MWEB" class="company-logo">
+                            <div class="timeline-title">
+                                <h3>Frontend Engineer</h3>
+                                <span class="company-name">MWEB</span>
+                            </div>
+                            <span class="job-badge">Contract</span>
+                        </div>
+                        <span class="job-period">Jul 2023 - Present</span>
+                        <div class="location">City of Cape Town, Western Cape, South Africa</div>
+                        <div class="skills-tags">
+                            <span class="skill-tag">Vuetify</span>
+                            <span class="skill-tag">Figma</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <img src="img/Toy.png" alt="Toy Kingdom" class="company-logo">
+                            <div class="timeline-title">
+                                <h3>Frontend Developer</h3>
+                                <span class="company-name">Toy Kingdom (Pty) Ltd</span>
+                            </div>
+                            <span class="job-badge">Contract</span>
+                        </div>
+                        <span class="job-period">Apr 2024 - Jul 2024</span>
+                        <div class="location">City of Cape Town, Western Cape, South Africa</div>
+                        <div class="skills-tags">
+                            <span class="skill-tag">.NET Framework</span>
+                            <span class="skill-tag">CI/CD</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 4 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <img src="img/littlefish-logo.png" alt="littlefish" class="company-logo">
+                            <div class="timeline-title">
+                                <h3>Frontend Developer</h3>
+                                <span class="company-name">littlefish</span>
+                            </div>
+                            <span class="job-badge">Contract</span>
+                        </div>
+                        <span class="job-period">Jul 2024 - Sep 2024</span>
+                        <div class="location">Johannesburg • Remote</div>
+                        <div class="skills-tags">
+                            <span class="skill-tag">Web Application Development</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 5 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <img src="img/fireworkx-logo.png" alt="Fireworkx" class="company-logo">
+                            <div class="timeline-title">
+                                <h3>Frontend Web Developer</h3>
+                                <span class="company-name">Fireworkx</span>
+                            </div>
+                            <span class="job-badge">Contract</span>
+                        </div>
+                        <span class="job-period">Jun 2022 - Apr 2024</span>
+                        <div class="location">Cape Town, Western Cape, South Africa</div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 6 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <img src="img/rnr-logo.png" alt="R&R Tech" class="company-logo">
+                            <div class="timeline-title">
+                                <h3>Frontend Engineer</h3>
+                                <span class="company-name">R&R Tech (Pty) Ltd</span>
+                            </div>
+                            <span class="job-badge">Full-time</span>
+                        </div>
+                        <span class="job-period">Jun 2023 - Feb 2024</span>
+                        <div class="location">City of Johannesburg, Gauteng, South Africa</div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 7 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <img src="img/pisval.PNG" alt="Pisval Tech" class="company-logo">
+                            <div class="timeline-title">
+                                <h3>Frontend and Backend Developer</h3>
+                                <span class="company-name">Pisval Tech</span>
+                            </div>
+                            <span class="job-badge">Full-time</span>
+                        </div>
+                        <span class="job-period">Aug 2020 - Sep 2021</span>
+                        <div class="location">Cape Town, Western Cape, South Africa</div>
+                        <div class="skills-tags">
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">English</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 8 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <img src="img/netmechanic-logo.png" alt="NetMechanic WebStudio" class="company-logo">
+                            <div class="timeline-title">
+                                <h3>Software Engineer</h3>
+                                <span class="company-name">NetMechanic WebStudio</span>
+                            </div>
+                            <span class="job-badge">Part-time</span>
+                        </div>
+                        <span class="job-period">Jan 2018 - Apr 2024</span>
+                        <div class="location">Cape Town, Western Cape, South Africa • On-site</div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 9 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <img src="img/netmechanic-logo.png" alt="NetMechanic WebStudio" class="company-logo">
+                            <div class="timeline-title">
+                                <h3>Junior Software Developer</h3>
+                                <span class="company-name">NetMechanic WebStudio</span>
+                            </div>
+                            <span class="job-badge">Full-time</span>
+                        </div>
+                        <span class="job-period">Aug 2018 - Aug 2020</span>
+                        <div class="location">Durbanville</div>
+                        <div class="job-description">Fullstack web developer</div>
+                        <div class="skills-tags">
+                            <span class="skill-tag">English</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 10 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <img src="img/netmechanic-logo.png" alt="NetMechanic WebStudio" class="company-logo">
+                            <div class="timeline-title">
+                                <h3>PHP Developer</h3>
+                                <span class="company-name">NetMechanic WebStudio</span>
+                            </div>
+                            <span class="job-badge">Part-time</span>
+                        </div>
+                        <span class="job-period">Jan 2018 - Dec 2019</span>
+                        <div class="location">City of Cape Town, Western Cape, South Africa</div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 11 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <img src="img/netmechanic-logo.png" alt="NetMechanic WebStudio" class="company-logo">
+                            <div class="timeline-title">
+                                <h3>Frontend Developer</h3>
+                                <span class="company-name">NetMechanic WebStudio</span>
+                            </div>
+                            <span class="job-badge">Part-time</span>
+                        </div>
+                        <span class="job-period">Jan 2018 - Dec 2019</span>
+                        <div class="location">Durbanville, Western Cape, South Africa</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio-header section" id="portfolio">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Portfolio</h2>
+                <p>A showcase of my recent projects and work</p>
+            </div>
+        </div>
     </section>
 
 
-     <!-- Start of all modal -->
-     <div class="modal" id="modal-background">
-        <div class="card-modal" id="modal">
-            <i class="uil uil-multiply" id="close-btn"></i>
-            <div class="brand">
-                <img src="img/modal.png" alt="">
-            </div>
-            <div class="info">
-                <h2>School Management System</h2>
-                <p>
-                    This is a school management system that allows teachers to manage their classes, students, and attendance.
-                </p>
-
-                <form action="#">
-                    <input type="email" placeholder="rate my work from 1 to 5">
-                    <input type="submit" value="Rate me" placeholder="Leave a rate">
-                </form>
-            </div>
-        </div>
-    </div>
-    <!-- End of all madal -->
-
-
-
-    <!-- Start of all modal -->
+    <!-- Project Modals -->
+    <!-- Car Crew Modal -->
     <div class="modal" id="modal-background">
         <div class="card-modal" id="modal">
-            <i class=" uil uil-multiply" id="close-btn"></i>
+            <button class="modal-close-btn" id="close-btn">
+                <i class="fas fa-times"></i>
+            </button>
             <div class="brand">
-                <img src="img/carcrew.png" alt="">
+                <img src="img/carcrew.png" alt="Car Crew Project">
             </div>
             <div class="info">
                 <h2>Car Crew</h2>
-                <p>Car crew is a website for a car dealers where you get best brands at the best prices</p>
+                <p>
+                    A showcase website for various car brands with modern UI/UX design. This project features a
+                    responsive layout,
+                    interactive elements, and a clean design that highlights premium vehicles.
+                </p>
+
+                <div class="project-details">
+                    <div class="project-detail-item">
+                        <i class="fas fa-code"></i>
+                        <div class="detail-content">
+                            <h4>Technologies</h4>
+                            <p>HTML5, CSS3, JavaScript, Bootstrap</p>
+                        </div>
+                    </div>
+
+                    <div class="project-detail-item">
+                        <i class="fas fa-tasks"></i>
+                        <div class="detail-content">
+                            <h4>My Role</h4>
+                            <p>Frontend Development, UI/UX Design</p>
+                        </div>
+                    </div>
+
+                    <div class="project-detail-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <div class="detail-content">
+                            <h4>Completion Date</h4>
+                            <p>January 2022</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-links">
+                    <a href="#" class="project-link-btn">
+                        <i class="fas fa-external-link-alt"></i> Visit Website
+                    </a>
+                    <a href="#" class="project-link-btn outline">
+                        <i class="fab fa-github"></i> View Code
+                    </a>
+                </div>
 
                 <form action="#">
-                    <input type="email" placeholder="rate my work from 1 to 5">
-                    <input type="submit" value="Rate me" placeholder="Leave a rate">
+                    <div class="form-group">
+                        <label for="rating">Rate this project (1-5)</label>
+                        <input type="number" id="rating" min="1" max="5" placeholder="Enter your rating">
+                    </div>
+                    <input type="submit" value="Submit Rating">
                 </form>
             </div>
         </div>
     </div>
-    <!-- End of all madal -->
 
 
-    <!-- Start of all modal -->
+
+
+
+
+    <!-- cDesign Modal -->
     <div class="modal" id="modal-background-c">
         <div class="card-modal" id="modal-c">
-            <i class=" uil uil-multiply" id="close-btn-c"></i>
+            <button class="modal-close-btn" id="close-btn-c">
+                <i class="fas fa-times"></i>
+            </button>
             <div class="brand">
-                <img src="img/cdesign_s.png" alt="">
+                <img src="img/cdesign_s.png" alt="cDesign Project">
             </div>
             <div class="info">
-                <h2>Cdesign</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente impedit voluptatum atque.</p>
+                <h2>cDesign</h2>
+                <p>
+                    An online store selling various design products for artists with integrated payment system.
+                    This e-commerce platform features product filtering, user accounts, and secure checkout.
+                </p>
+
+                <div class="project-details">
+                    <div class="project-detail-item">
+                        <i class="fas fa-code"></i>
+                        <div class="detail-content">
+                            <h4>Technologies</h4>
+                            <p>React.js, Node.js, MongoDB, Stripe API</p>
+                        </div>
+                    </div>
+
+                    <div class="project-detail-item">
+                        <i class="fas fa-tasks"></i>
+                        <div class="detail-content">
+                            <h4>My Role</h4>
+                            <p>Full-stack Development, Payment Integration</p>
+                        </div>
+                    </div>
+
+                    <div class="project-detail-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <div class="detail-content">
+                            <h4>Completion Date</h4>
+                            <p>March 2022</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-links">
+                    <a href="#" class="project-link-btn">
+                        <i class="fas fa-shopping-cart"></i> Visit Store
+                    </a>
+                    <a href="#" class="project-link-btn outline">
+                        <i class="fab fa-github"></i> View Code
+                    </a>
+                </div>
 
                 <form action="#">
-                    <input type="email" placeholder="rate my work from 1 to 5">
-                    <input type="submit" value="Rate me" placeholder="Leave a rate">
+                    <div class="form-group">
+                        <label for="rating-c">Rate this project (1-5)</label>
+                        <input type="number" id="rating-c" min="1" max="5" placeholder="Enter your rating">
+                    </div>
+                    <input type="submit" value="Submit Rating">
                 </form>
             </div>
         </div>
     </div>
-    <!-- End of all madal -->
 
-    <!-- Start of all modal -->
+    <!-- ClickShop Modal -->
     <div class="modal" id="modal-background-b">
         <div class="card-modal" id="modal-b">
-            <i class=" uil uil-multiply" id="close-btn-b"></i>
+            <button class="modal-close-btn" id="close-btn-b">
+                <i class="fas fa-times"></i>
+            </button>
             <div class="brand">
-                <img src="img/cliqs.png" alt="">
+                <img src="img/cliqs.png" alt="ClickShop Project">
             </div>
             <div class="info">
-                <h2>Cdesign</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente impedit voluptatum atque.</p>
+                <h2>ClickShop</h2>
+                <p>
+                    A custom e-commerce platform designed and developed for a client with product management.
+                    Features include inventory tracking, customer accounts, and an admin dashboard.
+                </p>
+
+                <div class="project-details">
+                    <div class="project-detail-item">
+                        <i class="fas fa-code"></i>
+                        <div class="detail-content">
+                            <h4>Technologies</h4>
+                            <p>Vue.js, Express.js, MySQL, AWS</p>
+                        </div>
+                    </div>
+
+                    <div class="project-detail-item">
+                        <i class="fas fa-tasks"></i>
+                        <div class="detail-content">
+                            <h4>My Role</h4>
+                            <p>Frontend Development, Backend API Design</p>
+                        </div>
+                    </div>
+
+                    <div class="project-detail-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <div class="detail-content">
+                            <h4>Completion Date</h4>
+                            <p>June 2022</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-links">
+                    <a href="#" class="project-link-btn">
+                        <i class="fas fa-shopping-cart"></i> Visit Store
+                    </a>
+                    <a href="#" class="project-link-btn outline">
+                        <i class="fas fa-image"></i> More Screenshots
+                    </a>
+                </div>
 
                 <form action="#">
-                    <input type="email" placeholder="rate my work from 1 to 5">
-                    <input type="submit" value="Rate me" placeholder="Leave a rate">
+                    <div class="form-group">
+                        <label for="rating-b">Rate this project (1-5)</label>
+                        <input type="number" id="rating-b" min="1" max="5" placeholder="Enter your rating">
+                    </div>
+                    <input type="submit" value="Submit Rating">
                 </form>
             </div>
         </div>
     </div>
-    <!-- End of all madal -->
+    <!-- End of Project Modals -->
 
+    <!-- Simple Project Modals -->
 
+    <!-- Car Crew Modal -->
+    <div class="simple-modal" id="car-crew-modal">
+        <div class="simple-modal-content">
+            <button class="simple-modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="simple-modal-image">
+                <img src="img/carcrew.png" alt="Car Crew Project">
+            </div>
+            <div class="simple-modal-info">
+                <h2 class="simple-modal-title">Car Crew</h2>
+                <p class="simple-modal-description">
+                    A showcase website for various car brands with modern UI/UX design. This project features a
+                    responsive layout, interactive elements, and a clean design that highlights premium vehicles.
+                </p>
 
+                <div class="simple-modal-details">
+                    <div class="simple-modal-detail-item">
+                        <i class="fas fa-code"></i>
+                        <div class="simple-modal-detail-content">
+                            <h4 class="simple-modal-detail-label">Technologies</h4>
+                            <p class="simple-modal-detail-value">HTML5, CSS3, JavaScript, Bootstrap</p>
+                        </div>
+                    </div>
+
+                    <div class="simple-modal-detail-item">
+                        <i class="fas fa-tasks"></i>
+                        <div class="simple-modal-detail-content">
+                            <h4 class="simple-modal-detail-label">My Role</h4>
+                            <p class="simple-modal-detail-value">Frontend Development, UI/UX Design</p>
+                        </div>
+                    </div>
+
+                    <div class="simple-modal-detail-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <div class="simple-modal-detail-content">
+                            <h4 class="simple-modal-detail-label">Completion Date</h4>
+                            <p class="simple-modal-detail-value">January 2022</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="simple-modal-links">
+                    <a href="#" class="simple-modal-link">
+                        <i class="fas fa-external-link-alt"></i> Visit Website
+                    </a>
+                    <a href="#" class="simple-modal-link outline">
+                        <i class="fab fa-github"></i> View Code
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- cDesign Modal -->
+    <div class="simple-modal" id="cdesign-modal">
+        <div class="simple-modal-content">
+            <button class="simple-modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="simple-modal-image">
+                <img src="img/cdesign_s.png" alt="cDesign Project">
+            </div>
+            <div class="simple-modal-info">
+                <h2 class="simple-modal-title">cDesign</h2>
+                <p class="simple-modal-description">
+                    An online store selling various design products for artists with integrated payment system.
+                    This e-commerce platform features product filtering, user accounts, and secure checkout.
+                </p>
+
+                <div class="simple-modal-details">
+                    <div class="simple-modal-detail-item">
+                        <i class="fas fa-code"></i>
+                        <div class="simple-modal-detail-content">
+                            <h4 class="simple-modal-detail-label">Technologies</h4>
+                            <p class="simple-modal-detail-value">React.js, Node.js, MongoDB, Stripe API</p>
+                        </div>
+                    </div>
+
+                    <div class="simple-modal-detail-item">
+                        <i class="fas fa-tasks"></i>
+                        <div class="simple-modal-detail-content">
+                            <h4 class="simple-modal-detail-label">My Role</h4>
+                            <p class="simple-modal-detail-value">Full-stack Development, Payment Integration</p>
+                        </div>
+                    </div>
+
+                    <div class="simple-modal-detail-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <div class="simple-modal-detail-content">
+                            <h4 class="simple-modal-detail-label">Completion Date</h4>
+                            <p class="simple-modal-detail-value">March 2022</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="simple-modal-links">
+                    <a href="#" class="simple-modal-link">
+                        <i class="fas fa-shopping-cart"></i> Visit Store
+                    </a>
+                    <a href="#" class="simple-modal-link outline">
+                        <i class="fab fa-github"></i> View Code
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ClickShop Modal -->
+    <div class="simple-modal" id="clickshop-modal">
+        <div class="simple-modal-content">
+            <button class="simple-modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="simple-modal-image">
+                <img src="img/cliqs.png" alt="ClickShop Project">
+            </div>
+            <div class="simple-modal-info">
+                <h2 class="simple-modal-title">ClickShop</h2>
+                <p class="simple-modal-description">
+                    A custom e-commerce platform designed and developed for a client with product management.
+                    Features include inventory tracking, customer accounts, and an admin dashboard.
+                </p>
+
+                <div class="simple-modal-details">
+                    <div class="simple-modal-detail-item">
+                        <i class="fas fa-code"></i>
+                        <div class="simple-modal-detail-content">
+                            <h4 class="simple-modal-detail-label">Technologies</h4>
+                            <p class="simple-modal-detail-value">Vue.js, Express.js, MySQL, AWS</p>
+                        </div>
+                    </div>
+
+                    <div class="simple-modal-detail-item">
+                        <i class="fas fa-tasks"></i>
+                        <div class="simple-modal-detail-content">
+                            <h4 class="simple-modal-detail-label">My Role</h4>
+                            <p class="simple-modal-detail-value">Frontend Development, Backend API Design</p>
+                        </div>
+                    </div>
+
+                    <div class="simple-modal-detail-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <div class="simple-modal-detail-content">
+                            <h4 class="simple-modal-detail-label">Completion Date</h4>
+                            <p class="simple-modal-detail-value">June 2022</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="simple-modal-links">
+                    <a href="#" class="simple-modal-link">
+                        <i class="fas fa-shopping-cart"></i> Visit Store
+                    </a>
+                    <a href="#" class="simple-modal-link outline">
+                        <i class="fas fa-image"></i> More Screenshots
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Simple Project Modals -->
 
 
     <!-- Portfolio Gallery Start -->
-    <section class="container-card" id="portfolio">
-        <div class="card">
-            <div class="card-img card-1"></div>
-            <h2>Car Crew</h2>
-            <p>Is a website that showcase different cars from different brands and tasty.</p>
-            <a id="open-btn">Website</a>
+    <div class="container">
+        <div class="portfolio-filter">
+            <ul class="filter-list">
+                <li class="filter-item active" data-filter="all">All</li>
+                <li class="filter-item" data-filter="website">Websites</li>
+                <li class="filter-item" data-filter="ecommerce">E-commerce</li>
+                <li class="filter-item" data-filter="marketing">Marketing</li>
+                <li class="filter-item" data-filter="video">Video</li>
+            </ul>
         </div>
 
-
-
-        <div class="card">
-            <div class="card-img card-2"></div>
-            <h2>cDesign</h2>
-            <p>Is an online store that sell various design product for many artists.</p>
-            <a id="open-btns">E-commerce</a>
-        </div>
-
-        <div class="card">
-            <div class="card-img card-3"></div>
-            <h2>ClickShop</h2>
-            <p>Is an online e-commerce platform design and conceptualized for a client by me.</p>
-            <a id="open-btns-b" href="#">ClickShop</a>
-        </div>
-
-        <div class="card">
-            <div class="card-img card-4"></div>
-            <h2>Computer Mania</h2>
-            <p>I participate in the building of this project while working at Netmechanic.</p>
-            <a href="https://www.computermania.co.za/">E-commerce</a>
-        </div>
-
-        <div class="card">
-            <div class="card-img card-5"></div>
-            <h2>E-learning</h2>
-            <p>This project was design for a client which saw the need of transfer the english classes online. </p>
-            <a href="#">Digital Marketing</a>
-        </div>
-
-        <div class="card">
-            <div class="card-img card-6">
+        <section class="container-card">
+            <div class="card" data-category="website">
+                <div class="card-img">
+                    <img src="img/carcrew.png" alt="Car Crew">
+                    <div class="overlay-info">
+                        <span>HTML • CSS • JavaScript</span>
+                    </div>
+                </div>
+                <h2>Car Crew</h2>
+                <p>A showcase website for various car brands with modern UI/UX design.</p>
+                <a href="#" class="project-link" data-modal-target="car-crew-modal"><i
+                        class="fas fa-external-link-alt"></i> View Project</a>
             </div>
-            <h2>YDC</h2>
-            <p>Is a furniture store that his owner saw the necessity to mantain the business presence online.</p>
-            <a href="#">Digital Marketing</a>
-        </div>
 
-        <div class="card">
-            <div class="card-img card-7">
+            <div class="card" data-category="ecommerce">
+                <div class="card-img">
+                    <img src="img/cdesign_s.png" alt="cDesign">
+                    <div class="overlay-info">
+                        <span>React • Node.js • Stripe</span>
+                    </div>
+                </div>
+                <h2>cDesign</h2>
+                <p>An online store selling various design products for artists with integrated payment system.</p>
+                <a href="#" class="project-link" data-modal-target="cdesign-modal"><i class="fas fa-shopping-cart"></i>
+                    E-commerce</a>
             </div>
-            <h2>Proprity FlexLog</h2>
-            <p>A platform that was design for rent and sell proprieties</p>
-            <a href="#">E-commerce</a>
-        </div>
 
-        <div class="card">
-            <div class="card-img card-8">
+            <div class="card" data-category="ecommerce">
+                <div class="card-img">
+                    <img src="img/cliqs.png" alt="ClickShop">
+                    <div class="overlay-info">
+                        <span>PHP • MySQL • Bootstrap</span>
+                    </div>
+                </div>
+                <h2>ClickShop</h2>
+                <p>A custom e-commerce platform designed and developed for a client with product management.</p>
+                <a href="#" class="project-link" data-modal-target="clickshop-modal"><i
+                        class="fas fa-shopping-cart"></i> ClickShop</a>
             </div>
-            <h2>Lose Control</h2>
-            <p>An online store which maintain his presence online thru social media platform</p>
-            <a href="#">Digital Marketing</a>
-        </div>
 
-        <!--        <div class="card">
-            <div class="card-img card-9">
+            <div class="card" data-category="ecommerce">
+                <div class="card-img">
+                    <img src="img/computer-manias.png" alt="Computer Mania">
+                    <div class="overlay-info">
+                        <span>WordPress • WooCommerce • jQuery</span>
+                    </div>
+                </div>
+                <h2>Computer Mania</h2>
+                <p>Contributed to this e-commerce project while working at Netmechanic, focusing on frontend
+                    development.</p>
+                <a href="https://www.computermania.co.za/" class="project-link"><i class="fas fa-desktop"></i> Visit
+                    Site</a>
             </div>
-            <h2>Pisval Tech</h2>
-            <p>Is a website belong to a tech agency based abroad.</p>
-            <a href="#">Agency Website</a>
-        </div> -->
 
-        <div class="card">
-            <div class="card-img card-10">
+            <div class="card" data-category="marketing">
+                <div class="card-img">
+                    <img src="img/elearning.png" alt="E-learning Platform">
+                    <div class="overlay-info">
+                        <span>React • Firebase • Material UI</span>
+                    </div>
+                </div>
+                <h2>E-learning Platform</h2>
+                <p>An online learning platform designed for English classes with video lessons and interactive
+                    exercises.</p>
+                <a href="#" class="project-link"><i class="fas fa-graduation-cap"></i> View Project</a>
             </div>
-            <h2>Uscooters</h2>
-            <p>An online platoform developed by to a client based in USA.</p>
-            <a href="https://uscooters.com/?srsltid=AfmBOorwpv4aWKKj3Y6k0Vg95Kfuw0JH5kgbH1_e1pxS93sg6UsffUa2">Onlie Store</a>
-        </div>
 
-        <div class="card">
-            <div class="card-img card-11">
+            <div class="card" data-category="marketing">
+                <div class="card-img">
+                    <img src="img/ydc-2.png" alt="YDC Furniture">
+                </div>
+                <h2>YDC Furniture</h2>
+                <p>A digital presence for a furniture store with product catalog and online inquiries.</p>
+                <a href="#" class="project-link"><i class="fas fa-couch"></i> View Project</a>
             </div>
-            <h2>School Management</h2>
-            <p>This is a video project that was created by me After effect and Primier pro.</p>
-            <a href="#">Video creation and Editing</a>
-        </div>
 
-        <div class="card">
-            <div class="card-img card-12">
+            <div class="card" data-category="ecommerce">
+                <div class="card-img">
+                    <img src="img/FlexLogo.PNG" alt="Property FlexLog">
+                </div>
+                <h2>Property FlexLog</h2>
+                <p>A real estate platform for renting and selling properties with advanced search functionality.</p>
+                <a href="#" class="project-link"><i class="fas fa-home"></i> View Project</a>
             </div>
-            <h2>Lose control</h2>
-            <p>Video created for a client, that pursue online store</p>
-            <a href="#">Lose control</a>
-        </div>
 
-        <div class="card">
-            <div class="card-img card-13">
+            <div class="card" data-category="marketing">
+                <div class="card-img">
+                    <img src="img/lose_control.PNG" alt="Lose Control">
+                </div>
+                <h2>Lose Control</h2>
+                <p>Social media marketing strategy and implementation for an online fashion store.</p>
+                <a href="#" class="project-link"><i class="fas fa-hashtag"></i> View Project</a>
             </div>
-            <h2>Work Hard</h2>
-            <p>Is a company that sell safety material for onshore and Offshore company abroad.</p>
-            <a href="#">Offshore company</a>
-        </div>
 
-        <div class="card">
-            <div class="card-img card-14">
+            <div class="card" data-category="ecommerce">
+                <div class="card-img">
+                    <img src="img/scooters.png" alt="Uscooters">
+                </div>
+                <h2>Uscooters</h2>
+                <p>An e-commerce platform developed for a US-based client selling electric scooters.</p>
+                <a href="https://uscooters.com/" class="project-link"><i class="fas fa-shopping-cart"></i> Visit
+                    Store</a>
             </div>
-            <h2>YDC lar do sonho</h2>
-            <p>Is an e-commerce platform that sell furniture.</p>
-            <a href="#">E-commerce website</a>
-        </div>
 
-        <div class="card">
-            <div class="card-img card-15">
+            <div class="card" data-category="video">
+                <div class="card-img">
+                    <img src="img/videoone.png" alt="School Management">
+                </div>
+                <h2>School Management</h2>
+                <p>A video project created using Adobe After Effects and Premiere Pro for educational purposes.</p>
+                <a href="#" class="project-link"><i class="fas fa-video"></i> Watch Video</a>
             </div>
-            <h2>YDC Logo</h2>
-            <p>The logo concept was created by me.</p>
-            <a href="#">Marketing and Branding</a>
-        </div>
 
-        <div class="card">
-            <div class="card-img card-16">
+            <div class="card" data-category="video">
+                <div class="card-img">
+                    <img src="img/videostwo.png" alt="Lose Control Promo">
+                </div>
+                <h2>Lose Control Promo</h2>
+                <p>Promotional video created for an online fashion store to boost their social media presence.</p>
+                <a href="#" class="project-link"><i class="fas fa-play-circle"></i> Watch Video</a>
             </div>
-            <h2>Pintotnet App Soluction</h2>
-            <p>My channel on Youtube about tech.
-                Please leave a like and subscribe. Thanks.
-            </p>
-            <a href="https://www.youtube.com/channel/UC3dhTWYHAhk1DX6yhrovb7Q">My Youtube channel</a>
-        </div>
 
-
-
-        <div class="card">
-            <div class="card-img card-17">
+            <div class="card" data-category="website">
+                <div class="card-img">
+                    <img src="img/work-hard.png" alt="Work Hard Safety">
+                </div>
+                <h2>Work Hard Safety</h2>
+                <p>Website for a company selling safety equipment for onshore and offshore operations.</p>
+                <a href="#" class="project-link"><i class="fas fa-hard-hat"></i> View Project</a>
             </div>
-            <h2>Flex Box crash course</h2>
-            <p>
-                This is a brief tutorial about flexbox from my Youtube channel.
-            </p>
-            <a href="#">Youtube Channel</a>
-        </div>
 
-        <div class="card">
-            <div class="card-img card-18">
+            <div class="card" data-category="ecommerce">
+                <div class="card-img">
+                    <img src="img/ydc-2.png" alt="YDC Lar do Sonho">
+                </div>
+                <h2>YDC Lar do Sonho</h2>
+                <p>E-commerce platform for a furniture store with product catalog and online ordering.</p>
+                <a href="#" class="project-link"><i class="fas fa-shopping-cart"></i> View Project</a>
             </div>
-            <h2>Netflix clone</h2>
-            <p>
-                A clone of Netflix website with authentication and API consumption.
-            </p>
-            <a href="#">Netflix</a>
-        </div>
 
-        <div class="card">
-            <div class="card-img card-19">
+            <div class="card" data-category="marketing">
+                <div class="card-img">
+                    <img src="img/ydc-logo.png" alt="YDC Logo Design">
+                </div>
+                <h2>YDC Logo Design</h2>
+                <p>Logo concept and branding materials created for YDC furniture store.</p>
+                <a href="#" class="project-link"><i class="fas fa-paint-brush"></i> View Design</a>
             </div>
-            <h2>Responsive Landing page</h2>
-            <p>
-                Landing page of a private project done.
-            </p>
-            <a href="#">Landing page</a>
-        </div>
 
-        <div class="card">
-            <div class="card-img card-20">
+            <div class="card" data-category="video">
+                <div class="card-img">
+                    <img src="img/youtube.PNG" alt="Pintonet App Solutions">
+                </div>
+                <h2>Pintonet App Solutions</h2>
+                <p>My YouTube channel about tech tutorials and web development tips.</p>
+                <a href="https://www.youtube.com/channel/UC3dhTWYHAhk1DX6yhrovb7Q" class="project-link"><i
+                        class="fab fa-youtube"></i> Subscribe</a>
             </div>
-            <h2>E-commerce website - Axios</h2>
-            <p>
-                This is a dynamic e-commerce website build from scrash that make use of API's, React Js.
-            </p>
-            <a href="#">Online store</a>
-        </div>
 
-
-        <div class="card">
-            <div class="card-img card-21">
+            <div class="card" data-category="video">
+                <div class="card-img">
+                    <img src="img/flexbox.PNG" alt="Flexbox Tutorial">
+                </div>
+                <h2>Flexbox Tutorial</h2>
+                <p>A comprehensive tutorial about CSS Flexbox from my YouTube channel.</p>
+                <a href="#" class="project-link"><i class="fab fa-youtube"></i> Watch Tutorial</a>
             </div>
-            <h2>Span Digital - React js - Redux</h2>
-            <p>
-                Span Digital is an app that consumes dynamic data from the unsplush API. Use redux for state management.
-            </p>
-            <a href="https://62975505eb46c90d9a8e211c--spandigitapinto.netlify.app/">Span Digital</a>
-        </div>
 
-        <div class="card">
-            <div class="card-img card-22">
+            <div class="card" data-category="website">
+                <div class="card-img">
+                    <img src="img/netflix-clone.PNG" alt="Netflix Clone">
+                </div>
+                <h2>Netflix Clone</h2>
+                <p>A clone of Netflix website with authentication and API integration for movie data.</p>
+                <a href="#" class="project-link"><i class="fas fa-film"></i> View Project</a>
             </div>
-            <h2>Mweb - Next js - Redux</h2>
-            <p>
-                Mweb is an Internet Service Provider based in South Africa since 1997. Mweb is a division of Internet Solutions Digital Ltd.
-            </p>
-            <a href="https://www.mweb.co.za/">Mweb</a>
-        </div>
 
-    </section>
-    <!-- Portfolio Gallery Start -->
+            <div class="card" data-category="website">
+                <div class="card-img">
+                    <img src="img/web-app.PNG" alt="Responsive Landing Page">
+                </div>
+                <h2>Responsive Landing Page</h2>
+                <p>A modern, responsive landing page designed for a client's product launch.</p>
+                <a href="#" class="project-link"><i class="fas fa-mobile-alt"></i> View Project</a>
+            </div>
+
+            <div class="card" data-category="ecommerce">
+                <div class="card-img">
+                    <img src="img/e-commerce.PNG" alt="E-commerce with Axios">
+                </div>
+                <h2>E-commerce with Axios</h2>
+                <p>A dynamic e-commerce website built from scratch using React.js and Axios for API integration.</p>
+                <a href="#" class="project-link"><i class="fas fa-shopping-cart"></i> View Project</a>
+            </div>
+
+            <div class="card" data-category="website">
+                <div class="card-img">
+                    <img src="img/span-d.PNG" alt="Span Digital">
+                </div>
+                <h2>Span Digital</h2>
+                <p>A React.js application that consumes data from the Unsplash API with Redux for state management.</p>
+                <a href="https://62975505eb46c90d9a8e211c--spandigitapinto.netlify.app/" class="project-link"><i
+                        class="fas fa-image"></i> Visit Site</a>
+            </div>
+
+            <div class="card" data-category="website">
+                <div class="card-img">
+                    <img src="img/Mweb.png" alt="Mweb">
+                </div>
+                <h2>Mweb</h2>
+                <p>Contributed to Mweb's website, a South African ISP, using Next.js and Redux for state management.</p>
+                <a href="https://www.mweb.co.za/" class="project-link"><i class="fas fa-wifi"></i> Visit Site</a>
+            </div>
+
+            <div class="card" data-category="website">
+                <div class="card-img">
+                    <img src="img/pos.png" alt="Pisval Tech POS">
+                    <div class="overlay-info">
+                        <span>React • TypeScript • Material UI</span>
+                    </div>
+                </div>
+                <h2>Pisval Tech POS</h2>
+                <p>A comprehensive point-of-sale system with inventory management, sales tracking, and customer
+                    database.</p>
+                <a href="#" class="project-link" data-modal-target="pisval-pos-modal"><i
+                        class="fas fa-cash-register"></i> View Project</a>
+            </div>
+
+            <div class="card" data-category="website">
+                <div class="card-img">
+                    <img src="img/face-ydc.PNG" alt="Social Connect">
+                    <div class="overlay-info">
+                        <span>Vue.js • Firebase • Tailwind CSS</span>
+                    </div>
+                </div>
+                <h2>Social Connect</h2>
+                <p>A social media platform with real-time messaging, profile customization, and content sharing.</p>
+                <a href="#" class="project-link"><i class="fas fa-users"></i> View Project</a>
+            </div>
+
+            <div class="card" data-category="ecommerce">
+                <div class="card-img">
+                    <img src="img/Toy.png" alt="Toy Kingdom">
+                    <div class="overlay-info">
+                        <span>WordPress • WooCommerce • PHP</span>
+                    </div>
+                </div>
+                <h2>Toy Kingdom</h2>
+                <p>An eCommerce website for a toy store with product catalog, shopping cart, and secure payment
+                    processing.</p>
+                <a href="#" class="project-link" data-modal-target="toykingdom-modal"><i
+                        class="fas fa-shopping-cart"></i>
+                    View Project</a>
+            </div>
+        </section>
+    </div>
+    <!-- Portfolio Gallery End -->
 
 
 
     <!-- Tech stack -->
-    <section class="stack" id="stack">
-        <h4 class="section-header-title">
-            Stack
-        </h4>
-        <h1 class="my-stack">All my tech stack</h1>
-        <div class="container-stack">
-            <div class="stack-item">
-                <img class="img-team" src="img/js.png" alt="pinto">
-                <div class="item-description">
-                    <h3>4 Years working with Javascript</h3>
-                    <p>Frontend Developer</p>
+    <section class="stack section" id="stack">
+        <div class="container">
+            <div class="section-title">
+                <h4 class="section-header-title">My Expertise</h4>
+                <h2 class="my-stack">Technical Skills</h2>
+            </div>
+
+            <div class="stack-categories">
+                <div class="category-tabs">
+                    <button class="category-tab active" data-category="frontend">Frontend</button>
+                    <button class="category-tab" data-category="backend">Backend</button>
+                    <button class="category-tab" data-category="tools">Tools & DevOps</button>
+                    <button class="category-tab" data-category="design">Design</button>
                 </div>
             </div>
 
-
-            <div class="stack-item">
-                <img class="img-team" src="img/html.png" alt="pinto">
-                <div class="item-description">
-                    <h3>5 Years working with HTML5</h3>
-                    <p>Frontend Developer</p>
-                </div>
-            </div>
-            <div class="stack-item">
-                <img class="img-team" src="img/css.jpg" alt="pinto">
-                <div class="item-description">
-                    <h3>5 Years working with CSS3</h3>
-                    <p>Frontend Developer</p>
+            <div class="container-stack">
+                <!-- Frontend Technologies -->
+                <div class="stack-item" data-type="frontend">
+                    <img class="img-team" src="img/js.png" alt="JavaScript">
+                    <div class="item-description">
+                        <h3>JavaScript</h3>
+                        <p>Frontend Development</p>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 95%;"></div>
+                        </div>
+                    </div>
                 </div>
 
-            </div>
-
-
-            <div class="stack-item">
-                <img class="img-team" src="img/react.png" alt="pinto">
-                <div class="item-description">
-                    <h3>4 Years working with React Js</h3>
-                    <p>Frontend Developer</p>
+                <div class="stack-item" data-type="frontend">
+                    <img class="img-team" src="img/html.png" alt="HTML5">
+                    <div class="item-description">
+                        <h3>HTML5</h3>
+                        <p>Frontend Development</p>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 98%;"></div>
+                        </div>
+                    </div>
                 </div>
 
-            </div>
-            <div class="stack-item">
-                <img class="img-team" src="img/mysql.png" alt="pinto">
-                <div class="item-description">
-                    <h3>5 Years working with Mysql</h3>
-                    <p>Backend Developer</p>
-                </div>
-            </div>
-            <div class="stack-item">
-                <img class="img-team" src="img/node.png" alt="pinto">
-                <div class="item-description">
-                    <h3>4 Years working with Node Js</h3>
-                    <p>Backend Developer</p>
-                </div>
-            </div>
-
-            <div class="stack-item">
-                <img class="img-team" src="img/gulp.jpg" alt="pinto">
-                <div class="item-description">
-                    <h3>3 Years working with Gulp</h3>
-                    <p>Gulp Task Management</p>
-                </div>
-            </div>
-            <div class="stack-item">
-                <img class="img-team" src="img/bootstrap.png" alt="pinto">
-                <div class="item-description">
-                    <h3>5 Years working with Bootstrap V4 / 5</h3>
-                    <p>Frontend Developer</p>
+                <div class="stack-item" data-type="frontend">
+                    <img class="img-team" src="img/css.jpg" alt="CSS3">
+                    <div class="item-description">
+                        <h3>CSS3</h3>
+                        <p>Frontend Development</p>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 95%;"></div>
+                        </div>
+                    </div>
                 </div>
 
-            </div>
-            <div class="stack-item">
-                <img class="img-team" src="img/docker.png" alt="pinto">
-                <div class="item-description ">
-                    <h3>1 Years working with Docker</h3>
-                    <p>Backend Developer</p>
-                </div>
-            </div>
-
-            <div class="stack-item">
-                <img class="img-team" src="img/material.jpg" alt="pinto">
-                <div class="item-description">
-                    <h3>4 Years working with Material UI</h3>
-                    <p>Frontend Developer</p>
+                <div class="stack-item" data-type="frontend">
+                    <img class="img-team" src="img/react.png" alt="React">
+                    <div class="item-description">
+                        <h3>React.js</h3>
+                        <p>Frontend Framework</p>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
                 </div>
 
-            </div>
-            <div class="stack-item">
-                <img class="img-team" src="img/webpack.jpg" alt="pinto">
-                <div class="item-description">
-                    <h3>3 Years working with Webpack</h3>
-                    <p>Frontend Developer</p>
+                <div class="stack-item" data-type="frontend">
+                    <img class="img-team" src="img/vue.png" alt="Vue.js">
+                    <div class="item-description">
+                        <h3>Vue.js</h3>
+                        <p>Frontend Framework</p>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stack-item" data-type="frontend">
+                    <img class="img-team" src="img/typescript.jpg" alt="TypeScript">
+                    <div class="item-description">
+                        <h3>TypeScript</h3>
+                        <p>Type-Safe JavaScript</p>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stack-item" data-type="frontend">
+                    <img class="img-team" src="img/redux.jpeg" alt="Redux">
+                    <div class="item-description">
+                        <h3>Redux</h3>
+                        <p>State Management</p>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stack-item" data-type="frontend">
+                    <img class="img-team" src="img/bootstrap.png" alt="Bootstrap">
+                    <div class="item-description">
+                        <h3>Bootstrap</h3>
+                        <p>CSS Framework</p>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 95%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stack-item" data-type="frontend">
+                    <img class="img-team" src="img/css-tail.jpg" alt="Tailwind CSS">
+                    <div class="item-description">
+                        <h3>Tailwind CSS</h3>
+                        <p>Utility-First CSS</p>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stack-item" data-type="frontend">
+                    <img class="img-team" src="img/material.jpg" alt="Material UI">
+                    <div class="item-description">
+                        <h3>Material UI</h3>
+                        <p>React Component Library</p>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stack-item" data-type="frontend">
+                    <img class="img-team" src="img/Chakra.png" alt="Chakra UI">
+                    <div class="item-description">
+                        <h3>Chakra UI</h3>
+                        <p>Component Library</p>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stack-item" data-type="frontend">
+                    <img class="img-team" src="img/styled.png" alt="Styled Components">
+                    <div class="item-description">
+                        <h3>Styled Components</h3>
+                        <p>CSS-in-JS</p>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Technologies -->
+                <div class="stack-item" data-type="backend">
+                    <img class="img-team" src="img/node.png" alt="Node.js">
+                    <div class="item-description">
+                        <h3>Node.js</h3>
+                        <p>Backend JavaScript</p>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stack-item" data-type="backend">
+                    <img class="img-team" src="img/mysql.png" alt="MySQL">
+                    <div class="item-description">
+                        <h3>MySQL</h3>
+                        <p>Relational Database</p>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stack-item" data-type="backend">
+                    <img class="img-team" src="img/mongo.png" alt="MongoDB">
+                    <div class="item-description">
+                        <h3>MongoDB</h3>
+                        <p>NoSQL Database</p>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stack-item" data-type="backend">
+                    <img class="img-team" src="img/graphql.png" alt="GraphQL">
+                    <div class="item-description">
+                        <h3>GraphQL</h3>
+                        <p>API Query Language</p>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stack-item" data-type="backend">
+                    <img class="img-team" src="img/axios-logo.png" alt="Axios">
+                    <div class="item-description">
+                        <h3>Axios</h3>
+                        <p>HTTP Client</p>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & DevOps -->
+                <div class="stack-item" data-type="tools">
+                    <img class="img-team" src="img/git.jpg" alt="Git">
+                    <div class="item-description">
+                        <h3>Git</h3>
+                        <p>Version Control</p>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 95%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stack-item" data-type="tools">
+                    <img class="img-team" src="img/webpack.jpg" alt="Webpack">
+                    <div class="item-description">
+                        <h3>Webpack</h3>
+                        <p>Module Bundler</p>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stack-item" data-type="tools">
+                    <img class="img-team" src="img/gulp.jpg" alt="Gulp">
+                    <div class="item-description">
+                        <h3>Gulp</h3>
+                        <p>Task Runner</p>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stack-item" data-type="tools">
+                    <img class="img-team" src="img/docker.png" alt="Docker">
+                    <div class="item-description">
+                        <h3>Docker</h3>
+                        <p>Containerization</p>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stack-item" data-type="tools">
+                    <img class="img-team" src="img/Azure.png" alt="Azure">
+                    <div class="item-description">
+                        <h3>Azure</h3>
+                        <p>Cloud Platform</p>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stack-item" data-type="tools">
+                    <img class="img-team" src="img/jira.png" alt="Jira">
+                    <div class="item-description">
+                        <h3>Jira</h3>
+                        <p>Project Management</p>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Design Tools -->
+                <div class="stack-item" data-type="design">
+                    <img class="img-team" src="img/adobe.png" alt="Photoshop">
+                    <div class="item-description">
+                        <h3>Photoshop</h3>
+                        <p>Image Editing</p>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stack-item" data-type="design">
+                    <img class="img-team" src="img/after.png" alt="After Effects">
+                    <div class="item-description">
+                        <h3>After Effects</h3>
+                        <p>Motion Graphics</p>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stack-item" data-type="design">
+                    <img class="img-team" src="img/xd.png" alt="Adobe XD">
+                    <div class="item-description">
+                        <h3>Adobe XD</h3>
+                        <p>UI/UX Design</p>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stack-item" data-type="design">
+                    <img class="img-team" src="img/figma.png" alt="Figma">
+                    <div class="item-description">
+                        <h3>Figma</h3>
+                        <p>UI/UX Design</p>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="stack-item">
-                <img class="img-team" src="img/git.jpg" alt="pinto">
-                <div class="item-description">
-                    <h3>5 Years working with Git</h3>
-                    <p>Version Control</p>
-                </div>
-            </div>
-
-
-            <div class="stack-item">
-                <img class="img-team" src="img/adobe.png" alt="pinto">
-                <div class="item-description">
-                    <h3>6 Years working with Adobe Photoshop</h3>
-                    <p>Designing Tool</p>
-                </div>
-            </div>
-            <div class="stack-item">
-                <img class="img-team" src="img/after.png" alt="pinto">
-                <div class="item-description">
-                    <h3>5 Years working / Adobe After Effect</h3>
-                    <p>Video Editing Tool</p>
-                </div>
-            </div>
-            <div class="stack-item">
-                <img class="img-team" src="img/xd.png" alt="pinto">
-                <div class="item-description">
-                    <h3>5 Years working with Adobe Xd</h3>
-                    <p>Frontend Developer</p>
-                </div>
-            </div>
-
-            <div class="stack-item">
-                <img class="img-team" src="img/typescript.jpg" alt="pinto">
-                <div class="item-description">
-                    <h3>2 Years working with typescript</h3>
-                    <p>Frontend Developer</p>
-                </div>
-            </div>
-
-            <div class="stack-item">
-                <img class="img-team" src="img/styled.png" alt="pinto">
-                <div class="item-description">
-                    <h3>4 Years working with Styled Comp</h3>
-                    <p>Frontend Developer</p>
-                </div>
-            </div>
-
-            <div class="stack-item">
-                <img class="img-team" src="img/css-tail.jpg" alt="pinto">
-                <div class="item-description">
-                    <h3>4 Years working with CSS Tailwind</h3>
-                    <p>Frontend Developer</p>
-                </div>
-            </div>
-
-            <div class="stack-item">
-                <img class="img-team" src="img/redux.jpeg" alt="pinto">
-                <div class="item-description">
-                    <h3>4 Years working with Redux</h3>
-                    <p>Frontend Developer</p>
-                </div>
-            </div>
-
-            <div class="stack-item">
-                <img class="img-team" src="img/axios-logo.png" alt="pinto">
-                <div class="item-description">
-                    <h3>4 Years working with Axios</h3>
-                    <p>Frontend Developer</p>
-                </div>
-            </div>
-
-
-            <!-- New tech added -->
-            <div class="stack-item">
-                <img class="img-team" src="img/mongo.png" alt="pinto">
-                <div class="item-description">
-                    <h3>4 Years working with MongoDB</h3>
-                    <p>Frontend Developer</p>
-                </div>
-            </div>
-
-
-            <div class="stack-item">
-                <img class="img-team" src="img/Chakra.png" alt="pinto">
-                <div class="item-description">
-                    <h3>4 Years working with Chakra UI</h3>
-                    <p>Frontend Developer</p>
-                </div>
-            </div>
-
-
-            <div class="stack-item">
-                <img class="img-team" src="img/vue.png" alt="pinto">
-                <div class="item-description">
-                    <h3>4 Years working with Vue Js</h3>
-                    <p>Frontend Developer</p>
-                </div>
-            </div>
-
-
-            <div class="stack-item">
-                <img class="img-team" src="img/Azure.png" alt="pinto">
-                <div class="item-description">
-                    <h3>4 Years working with Azure</h3>
-                    <p>Frontend Developer</p>
-                </div>
-            </div>
-
-            <div class="stack-item">
-                <img class="img-team" src="img/figma.png" alt="pinto">
-                <div class="item-description">
-                    <h3>4 Years working with Figma</h3>
-                    <p>Frontend Developer</p>
-                </div>
-            </div>
-
-            <div class="stack-item">
-                <img class="img-team" src="img/jira.png" alt="pinto">
-                <div class="item-description">
-                    <h3>4 Years working with Jira</h3>
-                    <p>Frontend Developer</p>
-                </div>
-            </div>
-
-            <div class="stack-item">
-                <img class="img-team" src="img/graphql.png" alt="pinto">
-                <div class="item-description">
-                    <h3>4 Years working with GraphQl</h3>
-                    <p>Frontend Developer</p>
-                </div>
-            </div>
+        </div>
     </section>
 
 
 
     <!-- Section contact Start-->
-    <section class="form">
+    <section class="form section" id="contact">
         <div class="container">
-            <div class="form">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+                <p>Have a project in mind? Let's work together!</p>
+            </div>
+
+            <div class="contact-container centered-contact">
                 <div class="contact-info">
-                    <form class="thank-you-form" action="send_email.php" method="post" enctype="text/plain" onsubmit="event.preventDefault(); alert('Your message has been sent!'); this.submit();">
-                        <h2>Leave a Message?</h2>
-                        <label for="name">Your Name:</label>
-                        <input type="text" id="name" name="name" required>
-                        <label for="email">Your Email:</label>
-                        <input type="email" id="email" name="email" required>
-                        <label for="message">Your Message:</label>
-                        <textarea id="message" name="message" required></textarea>
-                        <button type="submit">Send</button>
-                    </form>
-                </div>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p><a href="mailto:pintotnet@gmail.com">pintotnet@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h3>Phone</h3>
+                                <p><a href="tel:+27744330715">+27 74 433 0715</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Location</h3>
+                                <p>Cape Town, South Africa</p>
+                            </div>
+                        </div>
 
-                <div class="contact-form">
-
+                        <div class="social-links">
+                            <a href="https://github.com/Pinto1232" target="_blank" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/pinto-manuel-40262893/" target="_blank"
+                                class="social-link">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@ThePintoCode" target="_blank" class="social-link">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" target="_blank" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- Section contact End-->
 
-    <script type="text/javascript" src="js/script.js"></script>
+    <!-- Footer Start -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#" class="logo-text">
+                        <img class="main-logo" src="img/favicon.ico" alt="logo">
+                        <span>Pinto Manuel</span>
+                    </a>
+                    <p>Frontend & FullStack Developer with 5+ years of experience specializing in creating beautiful,
+                        functional, and responsive web applications.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/Pinto1232" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/pinto-manuel-40262893/" target="_blank"
+                            class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@ThePintoCode" target="_blank" class="social-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" target="_blank" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
 
-    </body>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#stack">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to my newsletter for the latest updates on projects, tech insights, and web development
+                        trends.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2023 Pinto Manuel. All Rights Reserved.</p>
+                <p>Designed with <i class="fas fa-heart"></i> by Pinto Manuel</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Scroll to Top Button -->
+    <a href="#home" class="scroll-top-btn">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Pisval Tech POS Modal -->
+    <div class="simple-modal" id="pisval-pos-modal">
+        <div class="simple-modal-content">
+            <button class="simple-modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="simple-modal-image">
+                <img src="img/pos.png" alt="Pisval Tech POS">
+            </div>
+            <div class="simple-modal-info">
+                <h2 class="simple-modal-title">Pisval Tech POS</h2>
+                <p class="simple-modal-description">
+                    A comprehensive point-of-sale system with inventory management, sales tracking, and customer
+                    database.
+                    This system provides a modern, intuitive interface for managing retail operations of all sizes.
+                </p>
+
+                <div class="simple-modal-details">
+                    <div class="simple-modal-detail-item">
+                        <i class="fas fa-code"></i>
+                        <div class="simple-modal-detail-content">
+                            <h4 class="simple-modal-detail-label">Technologies</h4>
+                            <p class="simple-modal-detail-value">React, TypeScript, Material UI, Node.js, MongoDB</p>
+                        </div>
+                    </div>
+
+                    <div class="simple-modal-detail-item">
+                        <i class="fas fa-tasks"></i>
+                        <div class="simple-modal-detail-content">
+                            <h4 class="simple-modal-detail-label">My Role</h4>
+                            <p class="simple-modal-detail-value">Full-Stack Development, UI/UX Design</p>
+                        </div>
+                    </div>
+
+                    <div class="simple-modal-detail-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <div class="simple-modal-detail-content">
+                            <h4 class="simple-modal-detail-label">Status</h4>
+                            <p class="simple-modal-detail-value">In Development</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="simple-modal-links">
+                    <a href="#" class="simple-modal-link">
+                        <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                    <a href="https://github.com/Pinto1232/pos-system" target="_blank" class="simple-modal-link outline">
+                        <i class="fab fa-github"></i> View Code
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toy Kingdom Modal -->
+    <div class="simple-modal" id="toykingdom-modal">
+        <div class="simple-modal-content">
+            <button class="simple-modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="simple-modal-image">
+                <img src="img/Toy.png" alt="Toy Kingdom eCommerce">
+            </div>
+            <div class="simple-modal-info">
+                <h2 class="simple-modal-title">Toy Kingdom</h2>
+                <p class="simple-modal-description">
+                    An eCommerce website for a toy store with product catalog, shopping cart, and secure payment
+                    processing.
+                    The site offers a seamless shopping experience with easy navigation and product filtering.
+                </p>
+
+                <div class="simple-modal-details">
+                    <div class="simple-modal-detail-item">
+                        <i class="fas fa-code"></i>
+                        <div class="simple-modal-detail-content">
+                            <h4 class="simple-modal-detail-label">Technologies</h4>
+                            <p class="simple-modal-detail-value">WordPress, WooCommerce, PHP, MySQL, jQuery</p>
+                        </div>
+                    </div>
+
+                    <div class="simple-modal-detail-item">
+                        <i class="fas fa-tasks"></i>
+                        <div class="simple-modal-detail-content">
+                            <h4 class="simple-modal-detail-label">My Role</h4>
+                            <p class="simple-modal-detail-value">WordPress Development, WooCommerce Customization</p>
+                        </div>
+                    </div>
+
+                    <div class="simple-modal-detail-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <div class="simple-modal-detail-content">
+                            <h4 class="simple-modal-detail-label">Completion Date</h4>
+                            <p class="simple-modal-detail-value">June 2022</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="simple-modal-links">
+                    <a href="https://toykingdom.co.za/" target="_blank" class="simple-modal-link">
+                        <i class="fas fa-external-link-alt"></i> Visit Store
+                    </a>
+                    <a href="#" class="simple-modal-link outline">
+                        <i class="fas fa-images"></i> View Case Study
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/modern-script.js"></script>
+    <script type="text/javascript" src="js/simple-modal.js"></script>
+
+</body>
 
 </html>

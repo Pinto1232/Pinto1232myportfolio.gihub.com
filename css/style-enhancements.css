@@ -1,0 +1,239 @@
+/* Style Enhancements for Portfolio
+   Comprehensive improvements for visual appeal and user experience */
+
+/* 1. Card Refinements */
+
+/* Add subtle rounded corners */
+.card {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* Improve image-to-content transition */
+.card-img::after {
+  background: linear-gradient(to bottom, transparent 70%, rgba(0, 0, 0, 0.9) 100%) !important;
+}
+
+.card-img {
+  position: relative;
+}
+
+.card-img::before {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(to bottom, transparent, #ffffff);
+  z-index: 2;
+}
+
+/* 2. Typography Enhancements */
+
+/* Improve font hierarchy */
+.card h2 {
+  font-size: 1.4rem !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.01em !important;
+}
+
+.card p {
+  font-size: 0.95rem !important;
+  color: #555 !important;
+  line-height: 1.7 !important;
+}
+
+/* 3. Interactive Elements */
+
+/* Add micro-interactions */
+.card a i {
+  transition: transform 0.3s ease;
+}
+
+.card a:hover i {
+  transform: translateX(3px);
+}
+
+/* 4. Color Refinements */
+
+/* Add subtle category indicators */
+.card[data-category="website"]::before {
+  background: linear-gradient(90deg, #00d2d3, #5f27cd) !important;
+}
+
+.card[data-category="ecommerce"]::before {
+  background: linear-gradient(90deg, #ff9f43, #ee5253) !important;
+}
+
+.card[data-category="marketing"]::before {
+  background: linear-gradient(90deg, #1dd1a1, #10ac84) !important;
+}
+
+.card[data-category="video"]::before {
+  background: linear-gradient(90deg, #ff6b6b, #ee5253) !important;
+}
+
+/* Make the accent line visible by default with reduced opacity */
+.card::before {
+  opacity: 0.3 !important;
+}
+
+.card:hover::before {
+  opacity: 1 !important;
+}
+
+/* 5. Layout Improvements */
+
+/* Add subtle hover state for neighboring cards */
+.container-card:hover .card:not(:hover) {
+  opacity: 0.8;
+  transform: scale(0.98);
+}
+
+/* Ensure hovered card is above others */
+.card:hover {
+  z-index: 10 !important;
+}
+
+/* 6. Content Presentation */
+
+/* Add image overlay information */
+.card-img .overlay-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  color: white;
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  padding-top: 30px;
+  text-align: center;
+}
+
+.card-img .overlay-info span {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  padding: 4px 10px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card:hover .card-img .overlay-info {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 7. Overall Portfolio Improvements */
+
+/* Add subtle background pattern */
+body {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Improve section transitions */
+section {
+  padding: 80px 0;
+  position: relative;
+}
+
+section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.1), transparent);
+}
+
+/* Specific adjustment for card container section */
+section.container-card {
+  padding: 40px 0;
+}
+
+/* Add subtle animation to section transitions */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* Additional Refinements */
+
+/* Enhance card shadow and overall appearance */
+.card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08) !important;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+  border: none !important;
+}
+
+.card:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Fix for card content area */
+.card h2,
+.card p,
+.card a {
+  position: relative;
+  z-index: 1;
+}
+
+/* Improve button styling */
+.card a {
+  font-weight: 600 !important;
+  letter-spacing: 0.03em !important;
+  border-radius: 4px !important;
+  transition: all 0.3s ease !important;
+}
+
+/* Add subtle animation to card images */
+.card-img img {
+  transition: transform 0.7s cubic-bezier(0.33, 1, 0.68, 1) !important;
+}
+
+.card:hover .card-img img {
+  transform: scale(1.08) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card {
+    border-radius: 4px;
+  }
+
+  .card h2 {
+    font-size: 1.3rem !important;
+  }
+
+  .card p {
+    font-size: 0.9rem !important;
+  }
+}
+
+/* Fix for container card hover effect on mobile */
+@media (max-width: 576px) {
+  .container-card:hover .card:not(:hover) {
+    opacity: 1;
+    transform: none;
+  }
+}

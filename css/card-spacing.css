@@ -1,0 +1,90 @@
+/* Add a small amount of space between cards */
+
+/* Main container for cards - add small gap */
+.container-card {
+  gap: 20px !important;
+  /* Increased gap between cards */
+  padding: 15px !important;
+  /* Increased padding around the container */
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)) !important;
+}
+
+/* Adjust card styling for the small gap */
+.card {
+  border-radius: 8px !important;
+  /* Match our enhanced card style */
+  border: 1px solid rgba(0, 0, 0, 0.05) !important;
+  /* Subtle border */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+  /* Enhanced shadow */
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+  height: 100% !important;
+  /* Ensure all cards have the same height */
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+/* Enhance hover effect with spacing */
+.card:hover {
+  transform: translateY(-8px) !important;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.08) !important;
+  z-index: 2 !important;
+  /* Ensure hovered card appears above others */
+}
+
+/* Adjust responsive behavior */
+@media (max-width: 1200px) {
+  .container-card {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)) !important;
+    gap: 18px !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .container-card {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)) !important;
+    gap: 15px !important;
+    padding: 12px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-card {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)) !important;
+    gap: 12px !important;
+    padding: 10px !important;
+  }
+
+  .card h2 {
+    font-size: 1.1rem !important;
+    padding: 1rem 1rem 0.4rem !important;
+  }
+
+  .card p {
+    font-size: 0.85rem !important;
+    padding: 0 1rem !important;
+  }
+
+  .card a {
+    margin: 0 1rem 1rem !important;
+    font-size: 0.8rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .container-card {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)) !important;
+    gap: 15px !important;
+    padding: 10px !important;
+  }
+
+  .card {
+    margin-bottom: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .card-img {
+    height: 220px !important;
+  }
+}

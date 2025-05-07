@@ -1,0 +1,271 @@
+/* Simple Modal CSS - Clean implementation */
+
+/* Modal Background */
+.simple-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Modal Content Container */
+.simple-modal-content {
+  background-color: #1e2235;
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+  position: relative;
+  min-height: 500px;
+  max-height: 80vh;
+}
+
+/* Modal Image Section */
+.simple-modal-image {
+  width: 50%;
+  background-color: #161824;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.simple-modal-image img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: opacity 0.3s ease;
+  opacity: 0.95;
+  border-radius: 4px;
+}
+
+.simple-modal-image img:hover {
+  opacity: 1;
+}
+
+/* Modal Content Section */
+.simple-modal-info {
+  width: 50%;
+  padding: 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Modal Title */
+.simple-modal-title {
+  font-size: 28px;
+  color: #fff;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.simple-modal-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(to right, #ff3e7f, #7f00ff);
+}
+
+/* Modal Description */
+.simple-modal-description {
+  color: #b4b4b4;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* Project Details */
+.simple-modal-details {
+  margin-bottom: 30px;
+}
+
+.simple-modal-detail-item {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.simple-modal-detail-item i {
+  color: #7f00ff;
+  margin-right: 15px;
+  font-size: 18px;
+  margin-top: 3px;
+}
+
+.simple-modal-detail-content {
+  flex: 1;
+}
+
+.simple-modal-detail-label {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.simple-modal-detail-value {
+  font-size: 14px;
+  color: #b4b4b4;
+}
+
+/* Project Links */
+.simple-modal-links {
+  display: flex;
+  gap: 15px;
+  margin-top: auto;
+}
+
+.simple-modal-link {
+  padding: 12px 20px;
+  background: linear-gradient(to right, #ff3e7f, #7f00ff);
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.simple-modal-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(127, 0, 255, 0.3);
+}
+
+.simple-modal-link.outline {
+  background: transparent;
+  border: 1px solid #7f00ff;
+  color: #7f00ff;
+}
+
+.simple-modal-link.outline:hover {
+  background-color: #7f00ff;
+  color: #fff;
+}
+
+/* Close Button */
+.simple-modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.simple-modal-close:hover {
+  background-color: #ff3e7f;
+  transform: rotate(90deg);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .simple-modal-content {
+    flex-direction: column;
+    max-width: 800px;
+  }
+
+  .simple-modal-image,
+  .simple-modal-info {
+    width: 100%;
+  }
+
+  .simple-modal-image {
+    height: 350px;
+  }
+
+  .simple-modal-image img {
+    max-height: 350px;
+    object-position: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .simple-modal {
+    padding: 15px;
+  }
+
+  .simple-modal-info {
+    padding: 25px;
+  }
+
+  .simple-modal-image {
+    height: 300px;
+  }
+
+  .simple-modal-image img {
+    max-height: 300px;
+    padding: 15px;
+  }
+
+  .simple-modal-links {
+    flex-direction: column;
+  }
+
+  .simple-modal-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .simple-modal-info {
+    padding: 20px;
+  }
+
+  .simple-modal-image {
+    height: 200px;
+  }
+
+  .simple-modal-image img {
+    max-height: 200px;
+    padding: 10px;
+  }
+
+  .simple-modal-title {
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+  }
+
+  .simple-modal-description {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+
+  .simple-modal-detail-label {
+    font-size: 14px;
+  }
+
+  .simple-modal-detail-value {
+    font-size: 12px;
+  }
+}

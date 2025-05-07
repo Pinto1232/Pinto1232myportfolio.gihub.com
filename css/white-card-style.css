@@ -1,0 +1,219 @@
+/* White Card Styling with Shadow Effects */
+
+/* Card structure - split design with dark image area and white content area */
+.card {
+  width: 100%;
+  max-width: 100%;
+  border: none;
+  background-color: #ffffff;
+  /* White background for card body */
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+  /* Subtle border for separation */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Modern hover effect with enhanced shadow */
+.card:hover {
+  transform: translateY(-5px);
+  z-index: 2;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+/* Accent line at top of card */
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #00d2d3, #5f27cd);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+/* Card image area - keep dark */
+.card-img {
+  height: 180px;
+  position: relative;
+  overflow: hidden;
+  background-color: #1a1a2e;
+  /* Dark background for image area */
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .card-img img {
+  transform: scale(1.1);
+}
+
+/* Modern overlay for images */
+.card-img::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.8) 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Card content styling with dark text on white background */
+.card h2 {
+  font-size: 1.3rem;
+  padding: 1.2rem 1.2rem 0.5rem;
+  margin: 0;
+  color: #333;
+  /* Dark text for white background */
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  position: relative;
+  text-align: left;
+  line-height: 1.3;
+  height: 3.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card p {
+  font-size: 0.9rem;
+  padding: 0 1.2rem;
+  margin: 0 0 1.2rem 0;
+  color: #666;
+  /* Medium gray text for white background */
+  line-height: 1.6;
+  flex-grow: 1;
+  height: 4.8rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+}
+
+/* Modern button styling */
+.card a {
+  margin: 0 1.2rem 1.2rem;
+  padding: 0.8rem 0;
+  background-color: rgba(0, 210, 211, 0.1);
+  color: #00a0a1;
+  /* Slightly darker teal for better contrast on white */
+  text-align: center;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 1px solid rgba(0, 210, 211, 0.3);
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  height: 2.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Button hover effect */
+.card a:hover {
+  background-color: #00d2d3;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 210, 211, 0.3);
+}
+
+/* Button shine effect */
+.card a::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(to bottom right,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.3) 100%);
+  transform: rotate(30deg);
+  transition: transform 0.5s ease;
+  opacity: 0;
+}
+
+.card a:hover::after {
+  opacity: 1;
+  transform: rotate(30deg) translate(10%, 10%);
+}
+
+/* Icon styling in buttons */
+.card a i {
+  font-size: 1rem;
+  margin-right: 0.3rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .card-img {
+    height: 190px;
+  }
+
+  .card h2 {
+    font-size: 1.4rem;
+    height: 3.7rem;
+  }
+
+  .card p {
+    height: 4.9rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .card-img {
+    height: 200px;
+  }
+
+  .card h2 {
+    font-size: 1.5rem;
+    height: 3.9rem;
+  }
+
+  .card p {
+    height: 5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    margin-bottom: 1px;
+  }
+
+  .card h2 {
+    height: auto;
+    min-height: 3.5rem;
+  }
+
+  .card p {
+    height: auto;
+    min-height: 4.8rem;
+  }
+}

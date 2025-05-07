@@ -1,0 +1,152 @@
+/* Reduced Spacing Between Sections */
+
+/* Reduce padding for all sections */
+.section {
+  padding: 2.5rem 0 !important;
+  /* Reduced from 6rem (96px) to 2.5rem (40px) */
+}
+
+/* Also target regular section elements */
+section {
+  padding: 2.5rem 0 !important;
+}
+
+/* Reduce margin for section titles */
+.section-title {
+  margin-bottom: 1.5rem !important;
+  /* Reduced from 4rem to 1.5rem */
+}
+
+/* Reduce spacing for chronology section */
+.chronology-section {
+  padding: 2rem 0 !important;
+  margin-top: 0 !important;
+  /* Removed negative margin */
+}
+
+/* Reduce spacing for about section */
+.about-section {
+  padding: 2.5rem 0 !important;
+  /* Reduced from 6rem */
+}
+
+/* Reduce spacing for stack section */
+.stack {
+  padding: 2.5rem 0 !important;
+  /* Reduced from 6rem */
+}
+
+/* Reduce spacing for form section */
+.form {
+  padding: 2.5rem 0 !important;
+  /* Reduced from 6rem */
+}
+
+/* Reduce spacing for portfolio header */
+.portfolio-header {
+  padding-top: 2rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
+/* Reduce spacing between timeline items */
+.timeline-item {
+  padding-bottom: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+/* Reduce spacing for book container */
+.book-container {
+  padding: 0.5rem 0 !important;
+  /* Reduced from 2rem */
+}
+
+/* Reduce spacing for my-stack title */
+.my-stack {
+  margin-bottom: 1rem !important;
+  /* Reduced from 3rem */
+}
+
+/* Reduce spacing for container-stack */
+.container-stack {
+  gap: 1rem !important;
+  /* Reduced from 2rem */
+}
+
+/* Reduce spacing for section transitions */
+section::after {
+  margin-bottom: 0 !important;
+}
+
+/* Override style-enhancements.css section padding */
+section {
+  padding: 2.5rem 0 !important;
+  animation: none !important;
+  /* Remove animation to prevent spacing issues */
+}
+
+/* Reduce spacing between home section and about section */
+.home-section+.about-section {
+  padding-top: 1.5rem !important;
+}
+
+/* Reduce spacing between about section and chronology section */
+.about-section+.chronology-section {
+  padding-top: 1.5rem !important;
+}
+
+/* Reduce spacing between chronology section and portfolio header */
+.chronology-section+.portfolio-header {
+  padding-top: 1.5rem !important;
+}
+
+/* Reduce spacing in the timeline */
+.timeline {
+  padding-top: 1rem !important;
+}
+
+.timeline-dot {
+  margin-bottom: 0.5rem !important;
+}
+
+.timeline-content {
+  padding: 1rem !important;
+}
+
+.chronology-title {
+  margin-bottom: 1rem !important;
+}
+
+/* Reduce spacing in the book pages */
+.book-page {
+  padding: 1.5rem !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .section {
+    padding: 2rem 0 !important;
+    /* Reduced from 5rem */
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 1.5rem 0 !important;
+    /* Reduced from 4rem */
+  }
+
+  .section-title {
+    margin-bottom: 1rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .section {
+    padding: 1rem 0 !important;
+    /* Reduced from 3rem */
+  }
+
+  .section-title {
+    margin-bottom: 0.75rem !important;
+  }
+}

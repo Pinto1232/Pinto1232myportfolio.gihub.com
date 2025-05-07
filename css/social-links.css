@@ -1,0 +1,74 @@
+/* Social Links Styling */
+
+/* Base styling is inherited from .git-account in book-style.css */
+
+/* YouTube account styling */
+.youtube-account i {
+  color: #FF0000 !important;
+  /* YouTube red */
+}
+
+.youtube-account:hover {
+  background-color: rgba(255, 0, 0, 0.1) !important;
+}
+
+/* LinkedIn account styling */
+.linkedin-account i {
+  color: #0077B5 !important;
+  /* LinkedIn blue */
+}
+
+.linkedin-account:hover {
+  background-color: rgba(0, 119, 181, 0.1) !important;
+}
+
+/* Adjust spacing for profile links */
+.profile-links {
+  gap: 0.3rem !important;
+  /* Minimal gap between social links */
+  margin-bottom: 0.5rem !important;
+  /* Add a small gap before download buttons */
+}
+
+/* Create a social links group */
+.social-links-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+/* Make social links more compact */
+.git-account,
+.youtube-account,
+.linkedin-account {
+  padding: 0.5rem 0.7rem !important;
+  /* Reduced from 0.8rem 1rem */
+  margin-bottom: 0 !important;
+  font-size: 0.9rem !important;
+  border-radius: 4px !important;
+}
+
+/* Adjust icon size */
+.git-account i,
+.youtube-account i,
+.linkedin-account i {
+  font-size: 1rem !important;
+  min-width: 20px !important;
+  text-align: center !important;
+}
+
+/* Add subtle transition effects */
+.git-account,
+.youtube-account,
+.linkedin-account {
+  transition: all 0.3s ease !important;
+}
+
+/* Add subtle icon animation on hover */
+.git-account:hover i,
+.youtube-account:hover i,
+.linkedin-account:hover i {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
