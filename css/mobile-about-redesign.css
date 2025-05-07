@@ -6,6 +6,8 @@
   /* Override the book container with a simpler design for mobile */
   .book-container {
     perspective: none;
+    box-shadow: none !important;
+    /* Remove any container shadow */
   }
 
   .book {
@@ -14,6 +16,13 @@
     opacity: 1;
     transform: none;
     min-height: auto;
+    box-shadow: none !important;
+    /* Remove any book shadow */
+  }
+
+  /* Remove any decorative elements that might cause duplicate shadows */
+  .book-page::before {
+    display: none !important;
   }
 
   /* Hide the book spine on mobile */
@@ -60,6 +69,8 @@
     border-radius: 50%;
     border: 3px solid var(--secondary);
     margin-bottom: 1rem;
+    box-shadow: none !important;
+    /* Remove any shadow to prevent duplication */
   }
 
   .profile-title {
