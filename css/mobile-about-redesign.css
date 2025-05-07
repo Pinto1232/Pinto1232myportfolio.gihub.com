@@ -3,6 +3,12 @@
 /* Only apply these styles on mobile devices */
 @media (max-width: 768px) {
 
+  /* Fix for the About section to remove duplicate shadows */
+  .about-section {
+    box-shadow: none !important;
+    background-color: var(--dark) !important;
+  }
+
   /* Override the book container with a simpler design for mobile */
   .book-container {
     perspective: none;
@@ -187,6 +193,10 @@
     margin-top: 1rem;
     font-weight: 500;
     cursor: pointer;
+    box-shadow: none !important;
+    /* Remove any shadow */
+    position: relative;
+    z-index: 1;
   }
 
   /* Only show the My Story button on mobile */
