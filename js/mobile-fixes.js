@@ -92,32 +92,72 @@ function fixAboutMeSection() {
         // Set initial state
         handleResponsiveDisplay();
 
-        // Toggle the right page when clicking the My Story button (mobile only)
-        myStoryBtn.addEventListener('click', function() {
+        // Function to toggle the My Story content
+        const toggleMyStory = function(event) {
+            // Prevent default behavior
+            if (event) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+
             // Only apply this functionality on mobile
             if (window.innerWidth <= 768) {
                 const isVisible = rightPage.style.display !== 'none';
 
                 if (isVisible) {
-                    // Hide the right page
-                    rightPage.style.display = 'none';
+                    // First remove the visible class for fade-out effect
+                    rightPage.classList.remove('visible');
+
+                    // After animation completes, hide the element
+                    setTimeout(() => {
+                        rightPage.style.display = 'none';
+                    }, 300);
+
                     // Change the icon to down arrow
-                    const icon = this.querySelector('i');
+                    const icon = myStoryBtn.querySelector('i');
                     if (icon) {
                         icon.className = 'fas fa-chevron-down';
                     }
                 } else {
-                    // Show the right page
+                    // First display the element
                     rightPage.style.display = 'block';
+
+                    // Force a reflow to ensure the transition works
+                    rightPage.offsetHeight;
+
+                    // Add the visible class for fade-in effect
+                    rightPage.classList.add('visible');
+
                     // Change the icon to up arrow
-                    const icon = this.querySelector('i');
+                    const icon = myStoryBtn.querySelector('i');
                     if (icon) {
                         icon.className = 'fas fa-chevron-up';
                     }
+
+                    // Scroll to the content
+                    setTimeout(() => {
+                        rightPage.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 300);
                 }
 
-                console.log('My Story button clicked, visibility:', !isVisible);
+                console.log('My Story button toggled, visibility:', !isVisible);
             }
+        };
+
+        // Add click event listener
+        myStoryBtn.addEventListener('click', toggleMyStory);
+
+        // Add touch event listeners for mobile
+        myStoryBtn.addEventListener('touchstart', function(e) {
+            // Add active class for visual feedback
+            this.classList.add('active');
+        });
+
+        myStoryBtn.addEventListener('touchend', function(e) {
+            // Remove active class
+            this.classList.remove('active');
+            // Toggle the content
+            toggleMyStory(e);
         });
 
         // Update on window resize
